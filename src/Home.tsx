@@ -1,4 +1,4 @@
-import { TAB, SUBHEADING, TEXT } from "./utils/utils";
+//import { TabListWrapper } from "./utils/tab";
 
 function Home({ }: { setCurrentPage: (page: string) => void }) {
   return (
@@ -8,22 +8,20 @@ function Home({ }: { setCurrentPage: (page: string) => void }) {
 
 
 // ---- Small building blocks ----
-const Tab = ({ children }: { children: React.ReactNode }) => (
-  <button className={TAB} type="button">
-    {children}
-  </button>
-);
 
-const SectionTitle = ({ children }: { children: React.ReactNode }) => (
-  <h3 className={SUBHEADING}>{children}</h3>
-);
+
+// const SectionTitle = ({ children }: { children: React.ReactNode }) => (
+//   <h3 className={SUBHEADING}>{children}</h3>
+// );
 
 // Reusable component for each grey info card
-const InfoCard = ({ title, children }: { title: string; children: React.ReactNode }) => (
-  <section className="bg-gray-200 rounded-2xl border border-gray-300 p-4 md:p-5">
-    <SectionTitle>{title}</SectionTitle>
-    <div className={`${TEXT} mt-2`}>{children}</div>
-  </section>
+const InfoCard: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
+  <div className="bg-white rounded-2xl border border-gray-300 p-4 md:p-5 shadow-sm">
+    <h4 className="text-lg font-semibold text-gray-900 mb-2">{title}</h4>
+    <div className="text-sm text-gray-800 leading-6 space-y-2">
+      {children}
+    </div>
+  </div>
 );
 
 // Main container that groups all the big grey cards together
@@ -83,35 +81,7 @@ const MainPanel = () => (
 function PortfolioMock() {
   return (
     <div className="min-h-screen bg-neutral-100 text-gray-900">
-      {/* Top bar */}
-      <header className="sticky top-0 z-10 backdrop-blur bg-white/80 border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 py-3 md:py-4">
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex items-center gap-2">
-              <span className="font-mono text-sm text-gray-600">var</span>
-              <h1 className="font-mono text-lg md:text-xl font-semibold">Jacob Seaman :</h1>
-            </div>
 
-            <nav className="flex items-center gap-2 md:gap-3">
-              {/* Simple social icon placeholders */}
-              <a className={TAB} href="#" aria-label="Email">✉️</a>
-              <a className={TAB} href="#" aria-label="GitHub">🐙</a>
-              <a className={TAB} href="#" aria-label="LinkedIn">in</a>
-            </nav>
-          </div>
-
-          {/* Tabs */}
-          <div className="mt-3 flex flex-wrap gap-2 md:gap-3">
-            <Tab>Code</Tab>
-            <Tab>Research</Tab>
-            <Tab>Design</Tab>
-            <Tab>
-              <span>Hobbies &amp; </span>
-              <span className="underline underline-offset-2">More!</span>
-            </Tab>
-          </div>
-        </div>
-      </header>
 
       {/* Body */}
       <main className="max-w-4xl mx-auto px-4 pb-16 pt-6 md:pt-8">
@@ -130,11 +100,6 @@ function PortfolioMock() {
         <div className="mt-6 md:mt-8 bg-gray-300 rounded-3xl border border-gray-400 p-3 md:p-4">
           <MainPanel />
         </div>
-
-        {/* Footer */}
-        <footer className="text-center mt-8 text-xs text-gray-600">
-          Website both designed and programmed by Jacob Seaman
-        </footer>
       </main>
     </div>
   );
