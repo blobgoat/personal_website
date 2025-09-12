@@ -28,33 +28,58 @@ function App() {
   };
 
   return (
-    <div>
+    // need grey background that is exactly C1C1C1
+    <div className="bg-[#C1C1C1]">
+
+
       {/* Top bar */}
-      <div className="min-h-screen bg-neutral-100 text-gray-900">
-        <header className="sticky top-0 z-10 backdrop-blur bg-white/80 border-b border-gray-200">
+      <div className="min-h-screen bg-[#C1C1C1] text-gray-900 ">
+
+        <header className="sticky top-0 z-10 bg-[#202124]">
           <div className="max-w-4xl mx-auto px-4 py-3 md:py-4">
             <div className="flex items-center justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <span className="font-mono text-sm text-gray-600">var</span>
-                <h1 className="font-mono text-lg md:text-xl font-semibold">Jacob Seaman :</h1>
+              <div
+                className="flex items-center gap-2 cursor-pointer"
+                onClick={() => setCurrentPage("Home")}
+              >
+                <span className="font-['IBM Plex Mono'] text-[#569CD6] font-regular">var</span>
+                <h1 className="font-['IBM Plex Mono'] text-[#7FB3CB] font-regular" style={{ fontSize: "18px" }}>
+                  Jacob Seaman
+                </h1>
+                <h1 className="font-['IBM Plex Mono'] text-[#FFFFFF] font-regular" style={{ fontSize: "18px" }}>
+                  :
+                </h1>
               </div>
 
               <nav className="flex items-center gap-2 md:gap-3">
-                {/* Simple social icon placeholders */}
-                <a href="#" aria-label="Email">✉️</a>
-                <a href="#" aria-label="GitHub">🐙</a>
-                <a href="#" aria-label="LinkedIn">in</a>
+                {/* Social icons with images */}
+                <a href="mailto:jacobaaronseaman@gmail.com" aria-label="Email" className="flex items-center" rel="noopener noreferrer">
+                  <img src="/assets/images/icons/email_big.png" alt="Email" className="w-full h-full max-w-[24px] max-h-[24px]" />
+                </a>
+                <a href="https://www.instagram.com/jacobaaronseaman/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center">
+                  <img src="/assets/images/icons/instagram_big.png" alt="Instagram" className="w-full h-full max-w-[24px] max-h-[24px]" />
+                </a>
+                <a href="https://www.linkedin.com/in/jacob-seaman-096536220/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center">
+                  <img src="/assets/images/icons/linked_in_big.png" alt="LinkedIn" className="w-full h-full max-w-[24px] max-h-[24px]" />
+                </a>
+                <a href="https://github.com/blobgoat" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex items-center">
+                  <img src="/assets/images/icons/github_big.png" alt="GitHub" className="w-full h-full max-w-[24px] max-h-[24px]" />
+                </a>
               </nav>
             </div>
           </div>
-          <div className="flex-auto items-center justify-center pt-[5%] px-0">
-            {/* Tabs */}
-            <div className="mt-3 flex flex-wrap gap-2 md:gap-3">
-              <TabListWrapper currentPage={currentPage} onSelect={setCurrentPage} />
-            </div>
-          </div>
+
         </header>
         <div>
+          {/* Tabs */}
+          <div className="bg-[#65676D] noise-25 flex flex-col">
+            <div className="h-2" />
+            <div className="flex-1">
+              <TabListWrapper currentPage={currentPage} onSelect={setCurrentPage} />
+            </div>
+            {/* spacer */}
+            <div className="h-2" />
+          </div>
         </div>
         {renderPage()}
       </div>

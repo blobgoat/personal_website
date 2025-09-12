@@ -1,47 +1,8 @@
 //import { useState } from "react";
 import React from "react";
-import { tabColorActive, tabColorPressed, tabText, tabColorActiveHover, tabColorPressedHover, tabSize, tabPadding, labels } from "./utils";
+import { tabColorActive, tabColorPressed, tabText, tabColorActiveHover, tabColorPressedHover, labels, tabminHeight, tabminPaddingX, tabminWidth, tabminPaddingY } from "./utils";
 
 // ---- Tab color tokens ----
-
-
-
-
-// ---- Small building blocks ----
-/**
- * Tab button component
- * takes in children as label. Also takes in label to render text on the tab button
- * Manages its own active state for styling purposes 
- */
-// export const Tab: React.FC = () => {
-//     //if any color components are not a # and 6 characters long, throw an error
-//     if (!/^#([0-9A-Fa-f]{6})$/.test(tabColorActive)) {
-//         throw new Error("tabColorActive must be a hex color code of the form #RRGGBB");
-//     }
-//     // if (!/^#([0-9A-Fa-f]{6})$/.test(textColor)) {
-//     //     throw new Error("textColor must be a hex color code of the form #RRGGBB");
-//     // }
-//     if (!/^#([0-9A-Fa-f]{6})$/.test(tabColorActiveHover)) {
-//         throw new Error("hoverColor must be a hex color code of the form #RRGGBB");
-//     }
-//     if (!/^#([0-9A-Fa-f]{6})$/.test(tabColorPressed)) {
-//         throw new Error("activeColor must be a hex color code of the form #RRGGBB");
-//     }
-//     if (!/^#([0-9A-Fa-f]{6})$/.test(tabColorPressedHover)) {
-//         throw new Error("activeColor must be a hex color code of the form #RRGGBB");
-//     }
-//     return (
-//         <button
-//             className={`
-//         rounded-md ${tabPadding} ${tabSize} font-medium transition
-//         bg-[${tabColorActive}] ${tabText}             /* default color */
-//         hover:bg-[${tabColorActiveHover}]                       /* hover color */
-//         active:bg-[${tabColorPressed}] active:shadow-inner  /* pressed color + drop shadow */
-//           `}
-//         >
-//         </button>
-//     );
-// };
 
 
 type TabProps = {
@@ -108,47 +69,56 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
     };
 
     return (
-        <button
-            ref={ref}
-            type="button"
-            role="tab"
-            aria-selected={isActive}
-            aria-disabled={disabled || undefined}
-            disabled={disabled}
-            onClick={handleClick}
-            // Provide CSS variables for colors
-            style={
-                {
+        <div className="flex flex-col flex-grow">
+            <button
+                ref={ref}
+                type="button"
+                role="tab"
+                aria-selected={isActive}
+                aria-disabled={disabled || undefined}
+                disabled={disabled}
+                onClick={handleClick}
+                style={{
                     ["--tab-bg" as any]: isActive ? tabColorPressed : tabColorActive,
                     ["--tab-hover" as any]: isActive ? tabColorPressedHover : tabColorActiveHover,
-                } as React.CSSProperties
-            }
-            className={`
-        rounded-md ${tabPadding} ${tabSize} font-medium transition
+                    minWidth: tabminWidth,
+                    minHeight: tabminHeight,
+                    padding: `${tabminPaddingY} ${tabminPaddingX}`,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "row", // Ensure horizontal alignment
+                    flexGrow: 1, // Allow the button to expand in size
+                } as React.CSSProperties}
+                className={`
+                    w-full h-full
+        rounded-md font-medium transition
         ${tabText}
-        bg-[var(--tab-bg)] hover:bg-[var(--tab-hover)]/50 active:shadow-inner
+        bg-[var(--tab-bg)] ${isActive ? "shadow-[inset_0_4px_4px_0_rgba(0,0,0,0.25)] ring-inset ring-1 ring-black/10" : ""} hover:bg-[var(--tab-hover)]/50
         ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
         ${className}
       `}
-            {...rest}
-        >
-            {children}
-        </button>
+                {...rest}
+            >
+                {children}
+            </button>
+        </div>
     );
 });
 
 export function TabList({ currentPage, onSelect }: { currentPage: string; onSelect: (label: string) => void }) {
     return (
-        <div role="tablist" aria-label="Example">
+        <div role="tablist" aria-label="Example" className="flex w-full h-full gap-2 md:gap-10 flex-nowrap justify-center">
             {labels.map((label) => (
-                <Tab
-                    key={label}
-                    active={currentPage === label}                // controlled
-                    onActiveChange={() => currentPage !== label ? onSelect(label) : onSelect("Home")}  // will switch to home if clicked again
-                    className={label === currentPage ? "ring-1 ring-indigo-300" : ""}
-                >
-                    {label}
-                </Tab>
+                <div className="flex-grow">
+                    <Tab
+                        key={label}
+                        active={currentPage === label}                // controlled
+                        onActiveChange={() => currentPage !== label ? onSelect(label) : onSelect("Home")}  // will switch to home if clicked again
+                    >
+                        {label}
+                    </Tab>
+                </div>
             ))}
         </div>
     );
@@ -156,13 +126,11 @@ export function TabList({ currentPage, onSelect }: { currentPage: string; onSele
 
 export function TabListWrapper({ currentPage, onSelect }: { currentPage: string; onSelect: (label: string) => void }) {
     return (
-        <div>
-            <TabList currentPage={currentPage} onSelect={onSelect} />
-        </div>
+        <TabList currentPage={currentPage} onSelect={onSelect} />
+
     );
 }
 
 export function setCurrentPage(label: any) {
     console.log(`Current page set to: ${label}`);
 }
-

@@ -12,8 +12,10 @@ export const tabColorPressed: string =
 export const tabText: string = "font-[Inter] text-[16px] underline text-[#4EC9B0]";
 export const tabColorActiveHover: string = "#362F27";
 export const tabColorPressedHover: string = "#362F27";
-export const tabPadding: string = "px-4 py-2";
-export const tabSize: string = "text-sm md:text-[15px]";
+export const tabminWidth: string = "69px";
+export const tabminHeight: string = "88.59px";
+export const tabminPaddingX: string = "16px";
+export const tabminPaddingY: string = "10px";
 
 // ---- Global typography tokens (className presets) ----
 export const SUBHEADING = "text-base md:text-lg font-semibold tracking-wide text-gray-900";

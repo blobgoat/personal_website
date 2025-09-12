@@ -1,46 +1,36 @@
 @import "tailwindcss";
 
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Attach this to the element that should have noise */
+.noise-25 {
+  position: relative;
+  /* create containing block for ::after */
+  overflow: hidden;
+  /* clip noise to this element's bounds */
 }
 
-a {
-  font-weight: 500;
-  text-decoration: inherit;
+/* Noise overlay: black grain at 100% */
+.noise-25::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  /* 25% concentration */
+  opacity: 1.0;
+
+  /* If you want stricter darkening, keep multiply; otherwise remove it */
+  mix-blend-mode: multiply;
+
+  /* Small/fine grain */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' fill='white'/></svg>");
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  /* smaller = finer (≈ your “size 0.5”) */
+  z-index: 0;
 }
 
-a:hover {
-  color: #535bf2;
+/* Keep your content above the overlay */
+.noise-25>* {
+  position: relative;
+  z-index: 1;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: transparent;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button.custom-btn {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: var(--btn-padding, 0.6em 1.2em);
-  font-size: var(--btn-size, 1em);
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
-} */

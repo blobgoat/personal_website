@@ -80,7 +80,7 @@ const MainPanel = () => (
 
 function PortfolioMock() {
   return (
-    <div className="min-h-screen bg-neutral-100 text-gray-900">
+    <div className="min-h-screen text-gray-900">
 
 
       {/* Body */}

@@ -1,0 +1,17 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                // Kill the server process running on port 5173
+                "match": ".*",
+                "cmd": "npx kill-port 5173"
+            },
+            {
+                // Run the npm run bp command
+                "match": ".*",
+                "cmd": "npm run bp"
+            }
+        ]
+    },
+    "editor.formatOnSave": true
+}
