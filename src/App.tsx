@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Home from "./Home";
-import { TabListWrapper } from "./utils/tab";
+import { TabListWrapper } from "./components/tab";
 //import { labels } from "./utils/utils";
 
 //const states: string[] = labels.concat('Home');
@@ -13,7 +13,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case "Home":
-        return <Home setCurrentPage={setCurrentPage} />;
+        return <Home setCurrentPage={setCurrentPage} setPageToCoding={setPageToCoding} setPageToResearch={setPageToResearch} setPageToDesign={setPageToDesign} setPageToHobbies={setPageToHobbies} setPageToHome={setPageToHome} />;
       case "Code":
         return <div className="text-center text-2xl">Code Page (Coming Soon!)</div>;
       case "Research":
@@ -23,7 +23,8 @@ function App() {
       case "Hobbies & More!":
         return <div className="text-center text-2xl">Hobbies & More! Page (Coming Soon!)</div>;
       default:
-        return <Home setCurrentPage={setCurrentPage} />;
+        return <Home setCurrentPage={setCurrentPage} setPageToCoding={setPageToCoding} setPageToResearch={setPageToResearch} setPageToDesign={setPageToDesign} setPageToHobbies={setPageToHobbies} setPageToHome={setPageToHome} />;
+
     }
   };
 
@@ -33,20 +34,20 @@ function App() {
 
 
       {/* Top bar */}
-      <div className="min-h-screen bg-[#C1C1C1] text-gray-900 ">
+      <div className="bg-[#C1C1C1] text-gray-900 ">
 
         <header className="sticky top-0 z-10 bg-[#202124]">
-          <div className="max-w-4xl mx-auto px-4 py-3 md:py-4">
-            <div className="flex items-center justify-between gap-3">
+          <div className="max-w-4xl mx-auto px-4 py-3">
+            <div className="flex items-left justify-between gap-3">
               <div
                 className="flex items-center gap-2 cursor-pointer"
                 onClick={() => setCurrentPage("Home")}
               >
-                <span className="font-['IBM Plex Mono'] text-[#569CD6] font-regular">var</span>
-                <h1 className="font-['IBM Plex Mono'] text-[#7FB3CB] font-regular" style={{ fontSize: "18px" }}>
+                <span className="font-['IBM Plex Mono'] text-[#569CD6] font-regular text-[18px] md:text-[30px]">var</span>
+                <h1 className="font-['IBM Plex Mono'] text-[#7FB3CB] font-regular text-[18px] md:text-[30px]">
                   Jacob Seaman
                 </h1>
-                <h1 className="font-['IBM Plex Mono'] text-[#FFFFFF] font-regular" style={{ fontSize: "18px" }}>
+                <h1 className="font-['IBM Plex Mono'] text-[#FFFFFF] font-regular text-[18px] md:text-[30px]">
                   :
                 </h1>
               </div>
@@ -84,11 +85,31 @@ function App() {
         {renderPage()}
       </div>
       {/* Footer */}
-      <footer className="text-center mt-8 text-xs text-gray-600">
+      <footer className="text-center text-xs text-white bg-[#65676D] h-[72px] flex items-center justify-center mt-1">
         Website both designed and programmed by Jacob Seaman
       </footer>
     </div>
   );
+}
+
+export function setPageToCoding(setCurrentPage: (page: string) => void) {
+  setCurrentPage("Code");
+}
+
+export function setPageToResearch(setCurrentPage: (page: string) => void) {
+  setCurrentPage("Research");
+}
+
+export function setPageToDesign(setCurrentPage: (page: string) => void) {
+  setCurrentPage("Design");
+}
+
+export function setPageToHobbies(setCurrentPage: (page: string) => void) {
+  setCurrentPage("Hobbies & More!");
+}
+
+export function setPageToHome(setCurrentPage: (page: string) => void) {
+  setCurrentPage("Home");
 }
 
 export default App;

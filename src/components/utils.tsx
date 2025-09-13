@@ -2,6 +2,10 @@
 //globally relevant variables
 export const labels: string[] = ["Code", "Research", "Design", "Hobbies & More!"];
 
+
+//home
+export const homeBio: string = "B.S. in Computer Science, University of Washington (Paul G. Allen School, Class of 2025) \n \n Passionate about bridging technology with people I have worked as a programmer, researcher, writer, collaborative leader, and designer."
+
 //tab specific styles
 
 
