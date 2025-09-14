@@ -66,6 +66,8 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
             setCurrentPage("Home");
 
         } // in a tablist, clicking selects this tab
+        //scroll to the top:
+        window.scrollTo(0, 0);
     };
 
     return (

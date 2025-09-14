@@ -30,7 +30,7 @@ function App() {
 
   return (
     // need grey background that is exactly C1C1C1
-    <div className="bg-[#C1C1C1]">
+    <div className="min-h-screen bg-[#C1C1C1]">
 
 
       {/* Top bar */}
@@ -82,7 +82,9 @@ function App() {
             <div className="h-2" />
           </div>
         </div>
-        {renderPage()}
+        <div className="min-h-screen ">
+          {renderPage()}
+        </div>
       </div>
       {/* Footer */}
       <footer className="text-center text-xs text-white bg-[#65676D] h-[72px] flex items-center justify-center mt-1">
@@ -94,22 +96,27 @@ function App() {
 
 export function setPageToCoding(setCurrentPage: (page: string) => void) {
   setCurrentPage("Code");
+  window.scrollTo(0, 0);
 }
 
 export function setPageToResearch(setCurrentPage: (page: string) => void) {
   setCurrentPage("Research");
+  window.scrollTo(0, 0);
 }
 
 export function setPageToDesign(setCurrentPage: (page: string) => void) {
   setCurrentPage("Design");
+  window.scrollTo(0, 0);
 }
 
 export function setPageToHobbies(setCurrentPage: (page: string) => void) {
   setCurrentPage("Hobbies & More!");
+  window.scrollTo(0, 0);
 }
 
 export function setPageToHome(setCurrentPage: (page: string) => void) {
   setCurrentPage("Home");
+  window.scrollTo(0, 0);
 }
 
 export default App;
