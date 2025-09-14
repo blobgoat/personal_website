@@ -20,7 +20,7 @@ function App() {
         return <div className="text-center text-2xl">Research Page (Coming Soon!)</div>;
       case "Design":
         return <div className="text-center text-2xl">Design Page (Coming Soon!)</div>;
-      case "Hobbies & More!":
+      case "Hobbies &\n More!":
         return <div className="text-center text-2xl">Hobbies & More! Page (Coming Soon!)</div>;
       default:
         return <Home setCurrentPage={setCurrentPage} setPageToCoding={setPageToCoding} setPageToResearch={setPageToResearch} setPageToDesign={setPageToDesign} setPageToHobbies={setPageToHobbies} setPageToHome={setPageToHome} />;
@@ -110,7 +110,7 @@ export function setPageToDesign(setCurrentPage: (page: string) => void) {
 }
 
 export function setPageToHobbies(setCurrentPage: (page: string) => void) {
-  setCurrentPage("Hobbies & More!");
+  setCurrentPage("Hobbies &\n More!");
   window.scrollTo(0, 0);
 }
 

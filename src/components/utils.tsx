@@ -1,6 +1,6 @@
 
 //globally relevant variables
-export const labels: string[] = ["Code", "Research", "Design", "Hobbies & More!"];
+export const labels: string[] = ["Code", "Research", "Design", "Hobbies &\n More!"];
 
 
 //home
@@ -13,7 +13,7 @@ export const tabColorActive: string = "#362F27";
 // pressed is 444240 50% saturation and internal drop shadow
 export const tabColorPressed: string =
     "#444240"; // 50% saturation & drop shadow
-export const tabText: string = "font-[Inter] text-[16px] underline text-[#4EC9B0]";
+export const tabText: string = "font-[Inter] text-[16px] md:text-[25px] underline text-[#4EC9B0]";
 export const tabColorActiveHover: string = "#362F27";
 export const tabColorPressedHover: string = "#362F27";
 export const tabminWidth: string = "69px";

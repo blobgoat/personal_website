@@ -85,7 +85,7 @@ const MainPanel = ({ setCurrentPage, setPageToCoding, setPageToResearch, setPage
   <div className="flex flex-col bg-[#D9D9D9] rounded-2xl text-[16px] leading-[100%]">
     <TopInfoCard title="Coding:" handleClick={() => setPageToCoding(setCurrentPage)}>
       <ul className="list-disc pl-6">
-        <li>Explore My Numerous Open Source Coding Projects!</li>
+        <li>Explore My Open Source Coding Projects!</li>
       </ul>
     </TopInfoCard>
 
@@ -128,7 +128,7 @@ const MainPanel = ({ setCurrentPage, setPageToCoding, setPageToResearch, setPage
       </ul>
     </RegularInfoCard>
 
-    <BottomInfoCard title="Hobbies and More:" handleClick={() => setPageToHobbies(setCurrentPage)}>
+    <BottomInfoCard title="Hobbies & More:" handleClick={() => setPageToHobbies(setCurrentPage)}>
       <ul className="list-disc pl-6">
         <li>Backpacking</li>
         <li>Cooking</li>

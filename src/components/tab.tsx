@@ -95,7 +95,7 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
                 className={`
                     w-full h-full
         rounded-md font-medium transition
-        ${tabText}
+        ${tabText + '\n'}
         bg-[var(--tab-bg)] ${isActive ? "shadow-[inset_0_4px_4px_0_rgba(0,0,0,0.25)] ring-inset ring-1 ring-black/10" : ""} hover:bg-[var(--tab-hover)]/50
         ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
         ${className}
