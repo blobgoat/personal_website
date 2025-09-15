@@ -10,17 +10,20 @@ function App() {
 
   useEffect(() => {
     switch (location.pathname) {
-      case "personal-website/code":
+      case "/code":
         setCurrentPage("Code");
         break;
-      case "personal-website/research":
+      case "/research":
         setCurrentPage("Research");
         break;
-      case "personal-website/design":
+      case "/design":
         setCurrentPage("Design");
         break;
-      case "personal-website/hobbies":
+      case "/hobbies":
         setCurrentPage("Hobbies &\n More!");
+        break;
+      case "/":
+        setCurrentPage("Home");
         break;
       default:
         setCurrentPage("Home");

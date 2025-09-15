@@ -14,7 +14,7 @@ createRoot(document.getElementById("root")!).render(
       redirect_uri: window.location.origin
     }}
   >
-    <BrowserRouter>
+    <BrowserRouter basename="/personal_website/">
       <App />
     </BrowserRouter>
   </Auth0Provider>
