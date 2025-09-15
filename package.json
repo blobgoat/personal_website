@@ -10,7 +10,8 @@
     "preview": "vite preview --port 5173",
     "bp": "npm run build && npm run preview",
     "test": "vitest --dir ./src/__test__/",
-    "coverage": "vitest --coverage"
+    "coverage": "vitest --coverage",
+    "postbuild": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.3.0",
