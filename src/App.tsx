@@ -69,7 +69,7 @@ function App() {
           <div className="flex items-left justify-between gap-3">
             <div
               className="flex items-center gap-2 cursor-pointer"
-              onClick={() => (window.location.href = "/")}
+              onClick={() => (setPageToHome(), window.scrollTo(0, 0))}
             >
               <span className="font-['IBM Plex Mono'] text-[#569CD6] text-[18px] md:text-[30px]">
                 var
