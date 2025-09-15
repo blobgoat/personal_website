@@ -1,0 +1,29 @@
+name: Set up tests then build and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Stop existing server
+        run: |
+          if pgrep -f "your-server-process-name"; then
+            pkill -f "your-server-process-name"
+          fi
+
+      - name: Set up and start server
+        run: |
+          nohup your-server-command &
