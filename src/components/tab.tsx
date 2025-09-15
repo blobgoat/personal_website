@@ -15,6 +15,12 @@ type TabProps = {
     onActiveChange?: (next: boolean) => void;
 
     disabled?: boolean;
+    setCurrentPage?: (page: string) => void;
+    setPageToResearch: (setCurrentPage: (page: string) => void) => void;
+    setPageToCoding: (setCurrentPage: (page: string) => void) => void;
+    setPageToDesign: (setCurrentPage: (page: string) => void) => void;
+    setPageToHome: (setCurrentPage: (page: string) => void) => void;
+    setPageToHobbies: (setCurrentPage: (page: string) => void) => void;
 
     // Colors: are static gloabls
 
@@ -32,6 +38,12 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
         defaultActive = false,       // uncontrolled initial
         onActiveChange,
         disabled = false,
+        setCurrentPage,
+        setPageToResearch,
+        setPageToCoding,
+        setPageToDesign,
+        setPageToHome,
+        setPageToHobbies,
         ...rest
     },
     ref
@@ -52,21 +64,31 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
     };
 
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-        //need to know label of e
         const label: string = (e.target as HTMLElement).innerText;
         rest.onClick?.(e);
         if (disabled) return;
         if (!isActive) {
             setActive(true);
-            //set the page to the tab label
-            setCurrentPage(label);
+            switch (label) {
+                case "Research":
+                    setPageToResearch!((page) => setCurrentPage!(page));
+                    break;
+                case "Code":
+                    setPageToCoding!((page) => setCurrentPage!(page));
+                    break;
+                case "Design":
+                    setPageToDesign!((page) => setCurrentPage!(page));
+                    break;
+                case "Hobbies & More!":
+                    setPageToHobbies!((page) => setCurrentPage!(page));
+                    break;
+                default:
+                    setPageToHome!((page) => setCurrentPage!(page));
+            }
         } else {
             setActive(false);
-
-            setCurrentPage("Home");
-
-        } // in a tablist, clicking selects this tab
-        //scroll to the top:
+            setPageToHome!((page) => setCurrentPage!(page));
+        }
         window.scrollTo(0, 0);
     };
 
@@ -108,7 +130,7 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
     );
 });
 
-export function TabList({ currentPage, onSelect }: { currentPage: string; onSelect: (label: string) => void }) {
+export function TabList({ currentPage, onSelect, setPageToResearch, setPageToCoding, setPageToDesign, setPageToHome, setPageToHobbies }: { currentPage: string; onSelect: (label: string) => void; setPageToResearch: (setCurrentPage: (page: string) => void) => void; setPageToCoding: (setCurrentPage: (page: string) => void) => void; setPageToDesign: (setCurrentPage: (page: string) => void) => void; setPageToHome: (setCurrentPage: (page: string) => void) => void; setPageToHobbies: (setCurrentPage: (page: string) => void) => void; }) {
     return (
         <div role="tablist" aria-label="Example" className="flex w-full h-full gap-2 md:gap-10 flex-nowrap justify-center">
             {labels.map((label) => (
@@ -117,6 +139,11 @@ export function TabList({ currentPage, onSelect }: { currentPage: string; onSele
                         key={label}
                         active={currentPage === label}                // controlled
                         onActiveChange={() => currentPage !== label ? onSelect(label) : onSelect("Home")}  // will switch to home if clicked again
+                        setPageToResearch={setPageToResearch}
+                        setPageToCoding={setPageToCoding}
+                        setPageToDesign={setPageToDesign}
+                        setPageToHome={setPageToHome}
+                        setPageToHobbies={setPageToHobbies}
                     >
                         {label}
                     </Tab>
@@ -126,13 +153,9 @@ export function TabList({ currentPage, onSelect }: { currentPage: string; onSele
     );
 }
 
-export function TabListWrapper({ currentPage, onSelect }: { currentPage: string; onSelect: (label: string) => void }) {
+export function TabListWrapper({ currentPage, onSelect, setPageToResearch, setPageToCoding, setPageToDesign, setPageToHome, setPageToHobbies }: { currentPage: string; onSelect: (label: string) => void; setPageToResearch: (setCurrentPage: (page: string) => void) => void; setPageToCoding: (setCurrentPage: (page: string) => void) => void; setPageToDesign: (setCurrentPage: (page: string) => void) => void; setPageToHome: (setCurrentPage: (page: string) => void) => void; setPageToHobbies: (setCurrentPage: (page: string) => void) => void; }) {
     return (
-        <TabList currentPage={currentPage} onSelect={onSelect} />
+        <TabList currentPage={currentPage} onSelect={onSelect} setPageToResearch={setPageToResearch} setPageToCoding={setPageToCoding} setPageToDesign={setPageToDesign} setPageToHome={setPageToHome} setPageToHobbies={setPageToHobbies} />
 
     );
-}
-
-export function setCurrentPage(label: any) {
-    console.log(`Current page set to: ${label}`);
 }
