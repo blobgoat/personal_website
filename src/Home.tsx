@@ -170,7 +170,7 @@ const imageAndBio = () => (
       {/*photo*/}
       <div className="w-48 h-48 md:w-56 md:h-56 rounded-lg overflow-hidden shadow-lg border border-gray-300">
         <img
-          src="/assets/images/photos/profile_picture.png"
+          src="assets/images/photos/profile_picture.png"
           alt="Jacob Seaman cooking at a scenic overlook"
           className="w-full h-full object-cover"
         />

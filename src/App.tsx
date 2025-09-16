@@ -90,7 +90,7 @@ function App() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/assets/images/icons/email_big.png"
+                  src="assets/images/icons/email_big.png"
                   alt="Email"
                   className="w-full h-full max-w-[24px] max-h-[24px]"
                 />
@@ -103,7 +103,7 @@ function App() {
                 className="flex items-center"
               >
                 <img
-                  src="/assets/images/icons/instagram_big.png"
+                  src="assets/images/icons/instagram_big.png"
                   alt="Instagram"
                   className="w-full h-full max-w-[24px] max-h-[24px]"
                 />
@@ -116,7 +116,7 @@ function App() {
                 className="flex items-center"
               >
                 <img
-                  src="/assets/images/icons/linked_in_big.png"
+                  src="assets/images/icons/linked_in_big.png"
                   alt="LinkedIn"
                   className="w-full h-full max-w-[24px] max-h-[24px]"
                 />
@@ -129,7 +129,7 @@ function App() {
                 className="flex items-center"
               >
                 <img
-                  src="/assets/images/icons/github_big.png"
+                  src="assets/images/icons/github_big.png"
                   alt="GitHub"
                   className="w-full h-full max-w-[24px] max-h-[24px]"
                 />
