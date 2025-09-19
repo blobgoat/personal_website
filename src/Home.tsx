@@ -139,7 +139,7 @@ const imageAndBio = () => (
       </div>
       {/*bio*/}
 
-      <div className="text-center md:text-left whitespace-pre-line text-sm md:text-[20px] leading-6 text-gray-800">
+      <div className="text-center whitespace-pre-line text-sm md:text-[20px] leading-6 text-gray-800">
         {homeBio}
       </div>
     </div>

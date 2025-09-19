@@ -5,7 +5,7 @@
  * @returns JSX.Element
  */
 export const TopInfoCard: React.FC<{ title: string; children: React.ReactNode, handleClick: () => void }> = ({ title, children, handleClick }) => (
-    <div className="rounded-t-2xl border border-black border-[1px] p-2 md:p-1 shadow-sm hover:bg-gray-100 cursor-pointer" onClick={handleClick}>
+    <div className="rounded-t-2xl border border-black border-[1px] p-1 md:p-2 shadow-sm hover:bg-gray-100 cursor-pointer" onClick={handleClick}>
         <h4 className="text-lg font-semibold text-gray-900 mb-1">{title}</h4>
         <div className="text-sm text-gray-800 leading-[100%] space-y-2">
             {children}
@@ -19,7 +19,7 @@ export const TopInfoCard: React.FC<{ title: string; children: React.ReactNode, h
  * @returns JSX.Element
  */
 export const BottomInfoCard: React.FC<{ title: string; children: React.ReactNode, handleClick: () => void }> = ({ title, children, handleClick }) => (
-    <div className="rounded-b-2xl border border-black border-[1px] p-2 md:p-1 shadow-sm hover:bg-gray-100 cursor-pointer" onClick={handleClick}>
+    <div className="rounded-b-2xl border border-black border-[1px] p-1 md:p-2 shadow-sm hover:bg-gray-100 cursor-pointer" onClick={handleClick}>
         <h4 className="text-lg font-semibold text-gray-900 mb-1">{title}</h4>
         <div className="text-sm text-gray-800 leading-[100%] space-y-2">
             {children}

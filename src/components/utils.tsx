@@ -25,3 +25,15 @@ export const tabminPaddingY: string = "10px";
 export const SUBHEADING = "text-base md:text-lg font-semibold tracking-wide text-gray-900";
 
 export const TEXT = "text-sm md:text-[15px] leading-6 text-gray-800";
+
+/**
+ * interface for data objects, should fit everything within data folder, must have every item in here
+ */
+export interface Project {
+    date: string;
+    title: string;
+    description: string;
+    images: { url: string; alt: string }[];
+    affiliatedLinks: { label: string; link: string }[];
+    technologies: string[];
+}

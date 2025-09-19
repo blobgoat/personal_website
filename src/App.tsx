@@ -2,6 +2,7 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import { TabListWrapper } from "./components/tab";
 import { useEffect, useState } from "react";
+import { Code } from "./Code";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -175,9 +176,7 @@ function App() {
           <Route
             path="/code"
             element={
-              <div className="text-center text-2xl">
-                Code Page (Coming Soon!)
-              </div>
+              <Code />
             }
           />
           <Route

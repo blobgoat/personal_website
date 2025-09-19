@@ -1,0 +1,67 @@
+[
+    {
+        "date": "2024-10-03T00:00:00Z",
+        "title": "UW Diary Cards",
+        "description": "An android and IOS application for easier tracking of resilience building skills for students inside UW educational classes.",
+        "images": [
+            {
+                "url": "https://example.com/images/uw_diary_cards_1.png",
+                "alt": "UW Diary Cards screenshot 1"
+            },
+            {
+                "url": "https://example.com/images/uw_diary_cards_2.png",
+                "alt": "UW Diary Cards screenshot 2"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "GitHub Repository",
+                "link": "https://github.com/username/uw_diary_cards"
+            },
+            {
+                "label": "Live Demo",
+                "link": "https://username.github.io/uw_diary_cards/"
+            },
+            {
+                "label": "android app",
+                "link": "https://download_my_app.com"
+            }
+        ],
+        "technologies": [
+            "Flutter",
+            "Dart",
+            "Parsing Documents"
+        ]
+    },
+    {
+        "date": "2025-10-03T00:00:00Z",
+        "title": "Personal Website Launch",
+        "description": "Launching a personal website showcasing new projects and experiences.",
+        "images": [
+            {
+                "url": "https://example.com/images/personal_website_update_1.png",
+                "alt": "Personal Website screenshot 1"
+            },
+            {
+                "url": "https://example.com/images/personal_website_update_2.png",
+                "alt": "Personal Website screenshot 2"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "GitHub Repository",
+                "link": "https://github.com/username/personal_website"
+            },
+            {
+                "label": "Live Website",
+                "link": "https://username.github.io/personal_website/"
+            }
+        ],
+        "technologies": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "HTML"
+        ]
+    }
+]
