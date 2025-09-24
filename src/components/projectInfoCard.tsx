@@ -57,15 +57,61 @@ export const RegularProjectInfoCard: React.FC<{ children: React.ReactNode, handl
     </div>
 );
 
+const escapeHtml = (str: string) =>
+    str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+// Replace **text** with <strong>text</strong>
+const formatInline = (value: string) =>
+    escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+
+
 /**
  * same as topinfocard but with no rounded corners
  * @returns JSX.Element
  */
-export const RegularInfoTitleCard: React.FC<{ title: string; children: React.ReactNode, handleClick: () => void }> = ({ title, children, handleClick }) => (
+export const RegularInfoTitleCard: React.FC<{
+    title: string;
+    description?: {
+        type: "tailwind";
+        content: (
+            | { type: "text"; value: string }
+            | { type: "list"; style: "bullet"; items: { type: "text"; value: string }[] }
+        )[];
+    };
+    handleClick: () => void;
+    children: React.ReactNode;
+}> = ({ title, description, handleClick, children }) => (
     <div className="border border-black border-[1px] p-1 md:p-2 shadow-sm bg-[#D9D9D9] w-full" onClick={handleClick}>
         <h4 className="text-[24px] font-semibold text-gray-900 mb-1">{title}</h4>
-        <div className="text-[20px] text-gray-800 leading-5 space-y-1">
-            {children}
-        </div>
+        {description
+            ? description.content.map((item, index) => {
+                if (item.type === "text") {
+                    const formattedValue = formatInline(item.value);
+                    return (
+                        <p
+                            key={index}
+                            dangerouslySetInnerHTML={{ __html: formattedValue }}
+                        />
+                    );
+                }
+                if (item.type === "list" && item.style === "bullet") {
+                    return (
+                        <ul key={index} className="list-disc pl-5">
+                            {item.items.map((listItem, listIndex) => {
+                                const formattedValue = formatInline(listItem.value);
+                                return (
+                                    <li
+                                        key={listIndex}
+                                        dangerouslySetInnerHTML={{ __html: formattedValue }}
+                                    />
+                                );
+                            })}
+                        </ul>
+                    );
+                }
+                return null;
+            })
+            : children}
+
     </div>
 );

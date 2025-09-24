@@ -1,50 +1,99 @@
 [
     {
-        "date": "2024-10-03T00:00:00Z",
+        "date": "2024-10-15T00:00:00Z",
         "title": "UW Diary Cards",
-        "description": "An android and IOS application for easier tracking of resilience building skills for students inside UW educational classes.",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "UW Diary Cards is a digital tool that helps students easily complete their weekly diary cards. Students can fill out their skills practice, rate the effectiveness of each skill, add custom notes for the teacher, and once finished, quickly download their completed card for a Canvas submission."
+                },
+                {
+                    "type": "list",
+                    "style": "bullet",
+                    "items": [
+                        {
+                            "type": "text",
+                            "value": "**Simple, student-friendly interface** for quick input."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Download as a Word document**, formatted with a maintainable template within the source code."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**One-click email sending** to share directly with faculty or supervisors."
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "value": "The app streamlines the entire process—making diary card tracking faster, easier, and more consistent."
+                }
+            ]
+        },
         "images": [
             {
-                "url": "https://example.com/images/uw_diary_cards_1.png",
-                "alt": "UW Diary Cards screenshot 1"
+                "url": "assets/images/coding/DC_home.png",
+                "alt": "Home screen with name and date at top, which below shows a list of diary cards representing each week"
             },
             {
-                "url": "https://example.com/images/uw_diary_cards_2.png",
-                "alt": "UW Diary Cards screenshot 2"
+                "url": "assets/images/coding/skill_screen.png",
+                "alt": "User interface of the skill screen where the user hits check boxes to indicate completion of skills"
             }
         ],
         "affiliatedLinks": [
             {
-                "label": "GitHub Repository",
-                "link": "https://github.com/username/uw_diary_cards"
+                "label": "GitHub",
+                "link": "https://github.com/blobgoat/UW_educ_DC"
             },
             {
-                "label": "Live Demo",
-                "link": "https://username.github.io/uw_diary_cards/"
+                "label": "Video of Demo",
+                "link": "https://drive.google.com/file/d/10zZENnxDARsFgurVwUxV6EHyhgvjG1rs/view?usp=sharing"
             },
             {
-                "label": "android app",
-                "link": "https://download_my_app.com"
+                "label": "Try Android App",
+                "link": "https://drive.google.com/file/d/1lrlPM6VRLtzQPWI076QxzqKA6lIFUghM/view?usp=sharing"
+            },
+            {
+                "label": "Other Files and More",
+                "link": "https://drive.google.com/drive/folders/1reYZPK755FpvjFf7VMBlapfe-GclgUQB?usp=sharing"
             }
         ],
         "technologies": [
             "Flutter",
             "Dart",
-            "Parsing Documents"
+            "Parsing Documents",
+            "Notifications",
+            "Android Development",
+            "IOS Development"
         ]
     },
     {
-        "date": "2025-10-03T00:00:00Z",
+        "date": "2025-09-23T00:00:00Z",
         "title": "Personal Website Launch",
-        "description": "Launching a personal website showcasing new projects and experiences.",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "This personal website is a showcase of my accomplishments, built with HTML and styled using Tailwind CSS for a clean, responsive design."
+                },
+                {
+                    "type": "text",
+                    "value": "Each project includes short, clear descriptions, and all content is managed through a structured JSON file."
+                },
+                {
+                    "type": "text",
+                    "value": "I’ve also developed custom components to keep the site modular, efficient, and easy to expand."
+                }
+            ]
+        },
         "images": [
             {
-                "url": "https://example.com/images/personal_website_update_1.png",
-                "alt": "Personal Website screenshot 1"
-            },
-            {
-                "url": "https://example.com/images/personal_website_update_2.png",
-                "alt": "Personal Website screenshot 2"
+                "url": "assets/images/coding/personal_website_home.png",
+                "alt": "Personal Website home page screenshot"
             }
         ],
         "affiliatedLinks": [

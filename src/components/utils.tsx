@@ -33,7 +33,17 @@ export const TEXT = "text-sm md:text-[15px] leading-6 text-gray-800";
 export interface Project {
     date: string;
     title: string;
-    description: string;
+    description: {
+        type: "tailwind";
+        content: (
+            | { type: "text"; value: string }
+            | {
+                type: "list";
+                style: "bullet" | "number";
+                items: { type: "text"; value: string }[];
+            }
+        )[];
+    } | string;
     images: { url: string; alt: string }[];
     affiliatedLinks: { label: string; link: string }[];
     technologies?: string[];
@@ -45,7 +55,19 @@ import { z } from "zod";
 const ProjectSchema = z.object({
     date: z.string(),
     title: z.string(),
-    description: z.string(),
+    description: z.object({
+        type: z.literal("tailwind"),
+        content: z.array(
+            z.union([
+                z.object({ type: z.literal("text"), value: z.string() }),
+                z.object({
+                    type: z.literal("list"),
+                    style: z.union([z.literal("bullet"), z.literal("number")]),
+                    items: z.array(z.object({ type: z.literal("text"), value: z.string() })),
+                }),
+            ])
+        ),
+    }),
     images: z.array(z.object({ url: z.string(), alt: z.string() })),
     affiliatedLinks: z.array(z.object({ label: z.string(), link: z.string() })),
     // exactly one of the two

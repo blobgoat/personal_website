@@ -21,13 +21,11 @@ function MockCodeList() {
 
     //for each object in data/coding_projects.json, create a CodingProjectCard object to append to the list
     const projects: Project[] = typecheckProjects(rawconfig);
-    const CodingCardsList: JSX.Element[] = projects.map((project: Project) => (
-
-
-
-        <CodingProjectCard key={project.title} project={project} />
-
-    ));
+    const CodingCardsList: JSX.Element[] = projects
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .map((project: Project) => (
+            <CodingProjectCard key={project.title} project={project} />
+        ));
 
     return (<ul className="list-disc list-inside">{CodingCardsList}</ul>);
 }
@@ -46,8 +44,7 @@ function CodingProjectCard({ project }: { project: Project }) {
                     <ProjectCarousel images={project.images} />
                 </div>
             </RegularProjectInfoCard>
-            <RegularInfoTitleCard title="Description:" handleClick={() => (project)} >
-                {project.description}
+            <RegularInfoTitleCard title="Description:" description={project.description as { type: "tailwind"; content: { type: "text"; value: string; }[]; }} handleClick={() => (project)} children={undefined} >
             </RegularInfoTitleCard>
             <RegularInfoTitleCard title="Technologies:" handleClick={() => (project)} >
                 {project.technologies.join(", ")}
@@ -64,7 +61,7 @@ type ImgItem = { url: string; alt: string };
 
 export default function ProjectCarousel({
     images,
-    size = 185, // px window size; set to 185 by default
+    size = 250, // px window size; set to 185 by default
 }: {
     images: ImgItem[];
     size?: number;
@@ -112,7 +109,7 @@ export default function ProjectCarousel({
             )}
 
             <div
-                className="relative overflow-hidden rounded border border-gray-200"
+                className="relative overflow-hidden rounded"
                 style={{ width: size, height: size }}
             >
                 {show && (
