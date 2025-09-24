@@ -1,0 +1,93 @@
+[
+    {
+        "date": "2022-10-03T00:00:00Z",
+        "title": "Sociological Forces and Fears of LLMs",
+        "description": "A literature review on the sociological forces and fears surrounding large language models (LLMs) like GPT-4, including ethical considerations and societal impacts. The paper explores philosophical, themes of fear throughout history, psychology and inherent human bias melding out definition of intelligence.",
+        "images": [
+            {
+                "url": "https://example.com/images/uw_diary_cards_1.png",
+                "alt": "Presenting at UW symposium"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "UW Symposium Presentation",
+                "link": "https://github.com/username/uw_diary_cards"
+            },
+            {
+                "label": "Slide Deck",
+                "link": "https://username.github.io/uw_diary_cards/"
+            },
+            {
+                "label": "paper in PDF",
+                "link": "https://download_my_app.com"
+            },
+            {
+                "label": "Zotero Link",
+                "link": "https://download_my_app.com"
+            }
+        ],
+        "skills": [
+            "Literature Review",
+            "History",
+            "Ethics",
+            "Sociology",
+            "Philosophy"
+        ]
+    },
+    {
+        "date": "2025-10-03T00:00:00Z",
+        "title": "Gamification of Undergraduate Research",
+        "description": "Led an exploration of gamification utilizing a new paradigm of psychology: sociopsychology. Redesigned interview questions to focus on sociopsychological lens. Wrote relevant grant proposals to fund the project. Collected data and collaborated with a team to analyze and present findings.",
+        "images": [
+            {
+                "url": "https://example.com/images/personal_website_update_1.png",
+                "alt": "Presenting at UW symposium"
+            },
+            {
+                "url": "https://example.com/images/personal_website_update_2.png",
+                "alt": "Screen shot of google form"
+            },
+            {
+                "url": "https://example.com/images/personal_website_update_2.png",
+                "alt": "Poster"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "GitHub Repository",
+                "link": "https://github.com/username/personal_website"
+            },
+            {
+                "label": "Google Form",
+                "link": "https://username.github.io/personal_website/"
+            },
+            {
+                "label": "Zotero Link",
+                "link": "https://username.github.io/personal_website/"
+            },
+            {
+                "label": "Poster",
+                "link": "https://username.github.io/personal_website/"
+            },
+            {
+                "label": "Most Recent Literature",
+                "link": "https://username.github.io/personal_website/"
+            },
+            {
+                "label": "Planning Document",
+                "link": "https://username.github.io/personal_website/"
+            }
+        ],
+        "skills": [
+            "Research Design",
+            "Data Collection",
+            "Data Analysis",
+            "Collaboration",
+            "Presentation",
+            "Grant Writing",
+            "Project Management",
+            "Sociopsychology"
+        ]
+    }
+]

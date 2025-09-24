@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState, type JSX } from "react";
-import type { Project } from "./components/utils";
+import { typecheckProjects, type Project } from "./components/utils";
 import rawconfig from "./data/coding_projects.json";
 import { BottomProjectInfoCard, RegularInfoTitleCard, RegularProjectInfoCard, TopProjectInfoCard } from "./components/projectInfoCard";
 
@@ -9,7 +9,7 @@ export function Code() {
         <><div className="text-center text-[50px] font-['BreeSerif'] font-semibold pt-10 pb-5">
             Coding Projects!
         </div>
-            <div className="flex justify-center" >
+            <div className="w-full max-w-4xl mx-auto" >
                 <MockCodeList />
             </div>
         </>
@@ -20,8 +20,8 @@ export function Code() {
 function MockCodeList() {
 
     //for each object in data/coding_projects.json, create a CodingProjectCard object to append to the list
-
-    const CodingCardsList: JSX.Element[] = rawconfig.map((project: Project) => (
+    const projects: Project[] = typecheckProjects(rawconfig);
+    const CodingCardsList: JSX.Element[] = projects.map((project: Project) => (
 
 
 
@@ -33,6 +33,9 @@ function MockCodeList() {
 }
 
 function CodingProjectCard({ project }: { project: Project }) {
+    if (!project.technologies) {
+        throw new Error("Project technologies is undefined");
+    }
 
 
     return (

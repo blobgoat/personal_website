@@ -1,0 +1,66 @@
+[
+    {
+        "date": "2024-10-03T00:00:00Z",
+        "title": "friendSHIP",
+        "description": "Seeking to solve loneliness and social isolation inside college, this app was designed based off of interviewing and through user research. Inside this unimplemented application, the user can click a destination and then set sail meeting and talking to friends along the way. This allows the user to build rapport with the same individuals for a 3 month period of time by allowing them to connect with people sailing similar routes as them.",
+        "images": [
+            {
+                "url": "https://example.com/images/uw_diary_cards_1.png",
+                "alt": "friendSHIP screenshot 1"
+            },
+            {
+                "url": "https://example.com/images/uw_diary_cards_2.png",
+                "alt": "friendSHIP screenshot 2"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "Figma Design File",
+                "link": "https://github.com/username/uw_diary_cards"
+            },
+            {
+                "label": "Live Demo",
+                "link": "https://username.github.io/uw_diary_cards/"
+            }
+        ],
+        "skills": [
+            "Figma Prototyping",
+            "User Research",
+            "UI/UX Design",
+            "Graphic Design"
+        ]
+    },
+    {
+        "date": "2025-10-03T00:00:00Z",
+        "title": "Food Bank Intake Form design",
+        "description": "Designing an intuitive and user-friendly intake form for food bank clients.",
+        "images": [
+            {
+                "url": "https://example.com/images/personal_website_update_1.png",
+                "alt": "Food Bank Intake Form screenshot 1"
+            },
+            {
+                "url": "https://example.com/images/personal_website_update_2.png",
+                "alt": "Food Bank Intake Form screenshot 2"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "Figma Design File",
+                "link": "https://github.com/username/personal_website"
+            },
+            {
+                "label": "Live Demo",
+                "link": "https://username.github.io/personal_website/"
+            }
+        ],
+        "skills": [
+            "Typography",
+            "Figma Prototyping",
+            "UI/UX Design",
+            "Graphic Design",
+            "Accessibility Design",
+            "Working with Clients"
+        ]
+    }
+]
