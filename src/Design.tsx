@@ -22,13 +22,11 @@ function DesignList() {
     //for each object in data/coding_projects.json, create a CodingProjectCard object to append to the list
     const projects: Project[] = typecheckProjects(rawconfig);
 
-    const CodingCardsList: JSX.Element[] = projects.map((project: Project) => (
-
-
-
-        <DesignProjectCard key={project.title} project={project} />
-
-    ));
+    const CodingCardsList: JSX.Element[] = projects
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .map((project: Project) => (
+            <DesignProjectCard key={project.title} project={project} />
+        ));
 
     return (<ul className="list-disc list-inside">{CodingCardsList}</ul>);
 }
@@ -47,8 +45,8 @@ function DesignProjectCard({ project }: { project: Project }) {
                     <ProjectCarousel images={project.images} />
                 </div>
             </RegularProjectInfoCard>
-            <RegularInfoTitleCard title="Description:" handleClick={() => (project)} >
-                {project.description}
+            <RegularInfoTitleCard title="Description:" description={project.description as { type: "tailwind"; content: { type: "text"; value: string; }[]; }} handleClick={() => (project)} children={undefined} >
+
             </RegularInfoTitleCard>
             <RegularInfoTitleCard title="Skills:" handleClick={() => (project)} >
                 {project.skills.join(", ")}

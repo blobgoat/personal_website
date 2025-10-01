@@ -22,15 +22,13 @@ function ResearchList() {
     //for each object in data/coding_projects.json, create a CodingProjectCard object to append to the list
     const projects: Project[] = typecheckProjects(rawconfig);
 
-    const CodingCardsList: JSX.Element[] = projects.map((project: Project) => (
+    const ResearchCardsList: JSX.Element[] = projects
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .map((project: Project) => (
+            <ResearchProjectCard key={project.title} project={project} />
+        ));
 
-
-
-        <ResearchProjectCard key={project.title} project={project} />
-
-    ));
-
-    return (<ul className="list-disc list-inside">{CodingCardsList}</ul>);
+    return (<ul className="list-disc list-inside">{ResearchCardsList}</ul>);
 }
 
 function ResearchProjectCard({ project }: { project: Project }) {
@@ -48,7 +46,9 @@ function ResearchProjectCard({ project }: { project: Project }) {
                 </div>
             </RegularProjectInfoCard>
             <RegularInfoTitleCard title="Description:" handleClick={() => (project)} >
-                {project.description}
+                {typeof project.description === "string" ? (
+                    project.description
+                ) : ''}
             </RegularInfoTitleCard>
             <RegularInfoTitleCard title="Skills:" handleClick={() => (project)} >
                 {project.skills!.join(", ")}
