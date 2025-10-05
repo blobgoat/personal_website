@@ -45,10 +45,7 @@ function ResearchProjectCard({ project }: { project: Project }) {
                     <ProjectCarousel images={project.images} />
                 </div>
             </RegularProjectInfoCard>
-            <RegularInfoTitleCard title="Description:" handleClick={() => (project)} >
-                {typeof project.description === "string" ? (
-                    project.description
-                ) : ''}
+            <RegularInfoTitleCard title="Description:" description={project.description as { type: "tailwind"; content: { type: "text"; value: string; }[]; }} handleClick={() => (project)} children={undefined} >
             </RegularInfoTitleCard>
             <RegularInfoTitleCard title="Skills:" handleClick={() => (project)} >
                 {project.skills!.join(", ")}
