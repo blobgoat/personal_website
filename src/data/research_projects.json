@@ -1,0 +1,157 @@
+[
+    {
+        "date": "2023-05-19T00:00:00Z",
+        "title": "Sociological Forces and Fears of LLMs",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "With the onset of dynamically reconfigurable computing systems, philosophers question the trustworthiness and safety of AI research and implementation. They argue an intelligence explosion and a singularity are inevitable, likening it to a ticking bomb. This fear is also present within the media, with rogue robots and singularities being frequent tropes for science fiction."
+                },
+                {
+                    "type": "text",
+                    "value": "However, we must note that catastrophizing sentient computers is not new. When first invented, civilians had trouble separating computers from mythology, and with scientists believing sentient computers were around the corner, it led to widespread technophobia—the fear of sentient gadgets. Eventually, familiarity with computers and a standardization of human intelligence caused this fear to dwindle."
+                },
+                {
+                    "type": "text",
+                    "value": "However, modern software is now self-adaptive, handling changing environments with increasing workloads. Computers are approaching standards of human intelligence, reviving the notion of dangerous machines. History is repeating."
+                },
+                {
+                    "type": "text",
+                    "value": "To restore trust with the consumer and minimize potential dangers, we must identify the risks, estimate their implications, and implement justified regulations on self-adaptive systems. This literature review identifies factors impacting our judgment—including science fiction, historical context, and technophobia—and then compares philosophical arguments, like basic AI drives and the orthogonality thesis, to current technology. Ultimately concluding that our fear is justified."
+                }
+            ]
+        },
+        "images": [
+            {
+                "url": "assets/images/research/shoreline_uw_symposium/shoreline_group_photo.png",
+                "alt": "A group of Shoreline community college students dressed in formal attire surrounded by poster presentations."
+            },
+            {
+                "url": "assets/images/research/shoreline_uw_symposium/control_problem.png",
+                "alt": "Slide presentation: In the movie The Matrix- computer overlords have taken over humanity trapping them in a simulation to maximize human happiness. This illustrates the control problem. Specifically: The problem of controlling Superintelligent Algorithms acting unaligned with human interests."
+            },
+            {
+                "url": "assets/images/research/shoreline_uw_symposium/intelligence_progression.png",
+                "alt": "Narrow AI is Expert like systems with single domain abilities like Stockfish: the chess solving algorithm. General AI is theoretical, but it can perform well on all tasks. In between these two states is superintelligence, the theoretical catastrophe that results when AI becomes highly intelligent in some domains."
+            },
+            {
+                "url": "assets/images/research/shoreline_uw_symposium/Introduction_slide.png",
+                "alt": "Hello, my name is Jacob Seaman. A Computer Science major. My mentor: Lauren V Bryant. You can find me at: linkedin.com/in/jacob-seaman-096536220"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "UW Symposium Presentation",
+                "link": "https://www.washington.edu/urs/history/"
+            },
+            {
+                "label": "Slide Deck",
+                "link": "https://username.github.io/uw_diary_cards/"
+            },
+            {
+                "label": "Most Recent Literature",
+                "link": "https://drive.google.com/drive/folders/1gMQ53kzDvjYwVRcu941sVyZmjwe7OWhN"
+            },
+            {
+                "label": "Zotero",
+                "link": "https://www.zotero.org/groups/4941091/controlproblem2023"
+            }
+        ],
+        "skills": [
+            "Literature Review",
+            "History",
+            "Ethics",
+            "Sociology",
+            "Philosophy"
+        ]
+    },
+    {
+        "date": "2025-10-03T00:00:00Z",
+        "title": "Gamification of Undergraduate Research",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "Led an exploration of gamification utilizing a new paradigm of psychology: sociopsychology."
+                },
+                {
+                    "type": "text",
+                    "value": "Redesigned interview questions to focus on sociopsychological lens."
+                },
+                {
+                    "type": "text",
+                    "value": "Wrote relevant grant proposals to fund the project."
+                },
+                {
+                    "type": "text",
+                    "value": "Collected data and collaborated with a team to analyze and present findings."
+                }
+            ]
+        },
+        "images": [
+            {
+                "url": "assets/images/research/gamification/presenting_at_uw_symposium.png",
+                "alt": "Presenting at UW symposium"
+            },
+            {
+                "url": "assets/images/research/gamification/finished_poster.png",
+                "alt": "Poster, explore on figma link for design if image failed to load. Or read my most recent literature if interested in content."
+            },
+            {
+                "url": "assets/images/research/gamification/research_survey_screenshot_1.png",
+                "alt": "Screen shot of research survey"
+            },
+            {
+                "url": "assets/images/research/gamification/research_survey_screenshot_2.png",
+                "alt": "Screen shot of research survey"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "GitHub",
+                "link": "https://github.com/blobgoat/gamification_data_analysis"
+            },
+            {
+                "label": "Google Form",
+                "link": "https://docs.google.com/forms/d/14CM_alpjTXEvOvSJhrqj4UkN2gTw5eGB6yHkGjrhFbY/preview?edit_requested=true"
+            },
+            {
+                "label": "Zotero",
+                "link": "https://www.zotero.org/groups/5752244/seal_gamification"
+            },
+            {
+                "label": "Poster",
+                "link": "https://www.figma.com/design/gHGyPgTpLoI7vg3SC8xxoC/Undergraduate-symposium-gamification?node-id=0-1&t=8IiKYJaTvwE4WqCk-1"
+            },
+            {
+                "label": "UW Symposium",
+                "link": "https://www.washington.edu/urs/history/"
+            },
+            {
+                "label": "Most Recent Literature",
+                "link": "https://drive.google.com/file/d/1iM6kQCLl1d_QriVzWpPBBSJABDjitBhc/view"
+            },
+            {
+                "label": "Planning Document",
+                "link": "https://docs.google.com/document/d/19iKpMmN7oso0xKavkoMtNlkt6h8Tx-7Mh9-kU-1YLzs/edit?tab=t.0"
+            },
+            {
+                "label": "And More",
+                "link": "https://drive.google.com/drive/folders/1AX1XL50-g2XIEQpkmSSzw4a0iayRfa3o"
+            }
+        ],
+        "skills": [
+            "Research Design",
+            "Data Collection",
+            "Data Analysis",
+            "Collaboration",
+            "Presentation",
+            "Grant Writing",
+            "Project Management",
+            "Sociopsychology"
+        ]
+    }
+]

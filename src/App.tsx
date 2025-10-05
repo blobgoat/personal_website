@@ -2,6 +2,9 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import { TabListWrapper } from "./components/tab";
 import { useEffect, useState } from "react";
+import { Code } from "./Code";
+import { Research } from "./Research";
+import { Design } from "./Design";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -157,54 +160,50 @@ function App() {
       </div>
 
       {/* Routes */}
-      <div className="min-h-screen">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                setCurrentPage={setCurrentPage}
-                setPageToResearch={setPageToResearch}
-                setPageToCoding={setPageToCoding}
-                setPageToDesign={setPageToDesign}
-                setPageToHome={setPageToHome}
-                setPageToHobbies={setPageToHobbies}
-              />
-            }
-          />
-          <Route
-            path="/code"
-            element={
-              <div className="text-center text-2xl">
-                Code Page (Coming Soon!)
-              </div>
-            }
-          />
-          <Route
-            path="/research"
-            element={
-              <div className="text-center text-2xl">
-                Research Page (Coming Soon!)
-              </div>
-            }
-          />
-          <Route
-            path="/design"
-            element={
-              <div className="text-center text-2xl">
-                Design Page (Coming Soon!)
-              </div>
-            }
-          />
-          <Route
-            path="/hobbies"
-            element={
-              <div className="text-center text-2xl">
-                Hobbies & More! Page (Coming Soon!)
-              </div>
-            }
-          />
-        </Routes>
+      <div className="min-h-screen flex justify-center">
+        <div className="w-full max-w-4xl px-4">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  setCurrentPage={setCurrentPage}
+                  setPageToResearch={setPageToResearch}
+                  setPageToCoding={setPageToCoding}
+                  setPageToDesign={setPageToDesign}
+                  setPageToHome={setPageToHome}
+                  setPageToHobbies={setPageToHobbies}
+                />
+              }
+            />
+            <Route
+              path="/code"
+              element={
+                <Code />
+              }
+            />
+            <Route
+              path="/research"
+              element={
+                <Research />
+              }
+            />
+            <Route
+              path="/design"
+              element={
+                <Design />
+              }
+            />
+            <Route
+              path="/hobbies"
+              element={
+                <div className="text-center text-2xl">
+                  Hobbies & More! Page (Coming Soon!)
+                </div>
+              }
+            />
+          </Routes>
+        </div>
       </div>
 
       {/* Footer */}

@@ -1,0 +1,146 @@
+[
+    {
+        "date": "2025-04-16T00:00:00Z",
+        "title": "friendSHIP",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "I designed a campus commuting app that helps students build lasting connections by matching them with others walking similar routes between classes."
+                },
+                {
+                    "type": "text",
+                    "value": "Based on user interviews, the design emphasizes consistent engagement outside the classroom as the best way to develop rapport."
+                },
+                {
+                    "type": "text",
+                    "value": "By encouraging recurring meetups during commutes, the app makes it easy to meet people who also want to expand their social circles."
+                },
+                {
+                    "type": "text",
+                    "value": "To add a playful and personal touch, the app features a customizable sticker board: users earn stickers, display them as conversation starters, and exchange them after meetups—emulating the way laptop stickers carry stories and memories in real life, but in a digital form."
+                }
+            ]
+        },
+        "images": [
+            {
+                "url": "assets/images/designing/friendship/friendship_poster.png",
+                "alt": "poster of friendSHIP app design"
+            },
+            {
+                "url": "assets/images/designing/friendship/home_screen.png",
+                "alt": "home screen of friendSHIP app design"
+            },
+            {
+                "url": "assets/images/designing/friendship/Sticker_board.png",
+                "alt": "sticker board screen of friendSHIP app design, completely blank but has vibrant photos of popular characters as stickers"
+            },
+            {
+                "url": "assets/images/designing/friendship/meetup.png",
+                "alt": "meetup screen of friendSHIP app design, shows a the people closing in on a dock or location to meet"
+            },
+            {
+                "url": "assets/images/designing/friendship/milestones.png",
+                "alt": "milestones screen of friendSHIP app design, shows a timeline of user achievements and goals, minimalistic with bubbles and arrows with a fun stick figure ship"
+            },
+            {
+                "url": "assets/images/designing/friendship/First_milestone.png",
+                "alt": "first milestone, a fun minimalist design with arrows and bubbles with an X that marks a"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "Figma Design File",
+                "link": "https://www.figma.com/design/7hBNtlpfVnh6ag00CT7nW6/FriendSHIP?t=bsr5nRy796u6ItUw-0"
+            },
+            {
+                "label": "Figma Prototype",
+                "link": "https://www.figma.com/proto/7hBNtlpfVnh6ag00CT7nW6/FriendSHIP?node-id=134-5148&t=2BfGlxyInd0pTyWT-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=134%3A5148"
+            },
+            {
+                "label": "Poster",
+                "link": "https://www.figma.com/design/1RnZpzLimltKHuAKkWGaTa/FriendSHIP-poster?node-id=0-1&t=nUvYqhthzZ5hAuFg-1"
+            }
+        ],
+        "skills": [
+            "Figma Prototyping",
+            "User Research",
+            "UI/UX Design",
+            "Graphic Design"
+        ]
+    },
+    {
+        "date": "2025-10-03T00:00:00Z",
+        "title": "Foodbank Intake Form",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "I designed a digital intake system for food banks to replace slow paper-based forms."
+                },
+                {
+                    "type": "text",
+                    "value": "The prototype streamlines client onboarding, collects dietary and resource needs often missed in the manual process, and saves valuable volunteer time."
+                },
+                {
+                    "type": "text",
+                    "value": "Built through storyboarding, iterative design, and high-fidelity prototyping in Figma, the project aims to improve accessibility, service quality, and scalability for food banks and their communities."
+                }
+            ]
+        },
+        "images": [
+            {
+                "url": "assets/images/designing/intake_form/quick_overlay.png",
+                "alt": "Multiple screens on a black background, showing a quick overlay of the intake form design"
+            },
+            {
+                "url": "assets/images/designing/intake_form/Intro Page (main).png",
+                "alt": "Logo of Lynwood Food Bank with a clean and simple introduction page design, text emphasizes that information is confidential and won't be shared"
+            },
+            {
+                "url": "assets/images/designing/intake_form/page_one.png",
+                "alt": "Personal information page of the intake form design, clean and simple with 3 fields to identify first name, last name, and date of birth"
+            },
+            {
+                "url": "assets/images/designing/intake_form/page_two.png",
+                "alt": "This page is all about the group members in the household. Clean with a multiple choice and large buttons. And a giant table collecting first, last name, date of birth."
+            },
+            {
+                "url": "assets/images/designing/intake_form/page_three.png",
+                "alt": "takes all the dietary restrictions and allergies of the household members. Clean and simple with a table to collect dietary restrictions, gauge severity, a notes section, and culinary preferences in a drop down"
+            },
+            {
+                "url": "assets/images/designing/intake_form/page_four.png",
+                "alt": "This page collects miscellaneous information for not as intuitive services. Such as offering diapers and dog and cat food. With big buttons."
+            },
+            {
+                "url": "assets/images/designing/intake_form/submit_page.png",
+                "alt": "This page is the final submit page with the TEFAP agreement, multiple checks to ensure the user understands information is suppose to be truthful, and a big green submit button"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "Figma Design File",
+                "link": "https://www.figma.com/design/jfuS5N23KRAqB4R6KuR755/Foodbank-Intake-Form-UI?node-id=0-1&p=f&t=w8SPinTCuBFKST7O-0"
+            },
+            {
+                "label": "Figma Prototype",
+                "link": "https://www.figma.com/proto/jfuS5N23KRAqB4R6KuR755/Foodbank-Intake-Form-UI?node-id=2004-10883&t=w8SPinTCuBFKST7O-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2004%3A10883&show-proto-sidebar=1"
+            },
+            {
+                "label": "Affiliated Github",
+                "link": "https://github.com/JimmyALiu/FoodBankConnect"
+            }
+        ],
+        "skills": [
+            "Typography",
+            "Figma Prototyping",
+            "UI/UX Design",
+            "Graphic Design",
+            "Accessibility Design",
+            "Working with Clients"
+        ]
+    }
+]

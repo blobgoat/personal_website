@@ -25,3 +25,64 @@ export const tabminPaddingY: string = "10px";
 export const SUBHEADING = "text-base md:text-lg font-semibold tracking-wide text-gray-900";
 
 export const TEXT = "text-sm md:text-[15px] leading-6 text-gray-800";
+
+/**
+ * interface for data objects, should fit everything within data folder, must have every item in here
+ * should have either technologies or skills but not both
+ */
+export interface Project {
+    date: string;
+    title: string;
+    description: {
+        type: "tailwind";
+        content: (
+            | { type: "text"; value: string }
+            | {
+                type: "list";
+                style: "bullet" | "number";
+                items: { type: "text"; value: string }[];
+            }
+        )[];
+    } | string;
+    images: { url: string; alt: string }[];
+    affiliatedLinks: { label: string; link: string }[];
+    technologies?: string[];
+    skills?: string[];
+}
+
+import { z } from "zod";
+
+const ProjectSchema = z.object({
+    date: z.string(),
+    title: z.string(),
+    description: z.object({
+        type: z.literal("tailwind"),
+        content: z.array(
+            z.union([
+                z.object({ type: z.literal("text"), value: z.string() }),
+                z.object({
+                    type: z.literal("list"),
+                    style: z.union([z.literal("bullet"), z.literal("number")]),
+                    items: z.array(z.object({ type: z.literal("text"), value: z.string() })),
+                }),
+            ])
+        ),
+    }),
+    images: z.array(z.object({ url: z.string(), alt: z.string() })),
+    affiliatedLinks: z.array(z.object({ label: z.string(), link: z.string() })),
+    // exactly one of the two
+    technologies: z.array(z.string()).optional(),
+    skills: z.array(z.string()).optional(),
+}).refine(
+    (p) => (p.technologies ? 1 : 0) + (p.skills ? 1 : 0) === 1,
+    { message: "Project must have exactly one of technologies or skills" }
+);
+
+/**
+ * Typecheck the projects in the raw JSON string
+ * @param rawconfig - raw JSON string from data file
+ * @returns array of type-checked projects
+ */
+export function typecheckProjects(rawconfig: unknown): Project[] {
+    return z.array(ProjectSchema).parse(rawconfig);
+}
