@@ -93,12 +93,12 @@
         },
         "images": [
             {
-                "url": "assets/images/research/gamification/presenting_at_uw_symposium.png",
-                "alt": "Presenting at UW symposium"
-            },
-            {
                 "url": "assets/images/research/gamification/finished_poster.png",
                 "alt": "Poster, explore on figma link for design if image failed to load. Or read my most recent literature if interested in content."
+            },
+            {
+                "url": "assets/images/research/gamification/presenting_at_uw_symposium.png",
+                "alt": "Presenting at UW symposium"
             },
             {
                 "url": "assets/images/research/gamification/research_survey_screenshot_1.png",

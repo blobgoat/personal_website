@@ -61,10 +61,12 @@ type ImgItem = { url: string; alt: string };
 
 export default function ProjectCarousel({
     images,
-    size = 250, // px window size; set to 185 by default
+    height = 400, // px window size; set to 400 by default
+    width = "100%", // default width set to 100%
 }: {
     images: ImgItem[];
-    size?: number;
+    height?: number;
+    width?: string | number;
 }) {
     const [i, setI] = useState(0);
 
@@ -94,7 +96,7 @@ export default function ProjectCarousel({
             }}
             tabIndex={0}
             aria-label="Image carousel"
-            style={{ height: size }}
+            style={{ height: height, width: width }}
         >
             {total > 1 && (
                 <button
@@ -110,7 +112,7 @@ export default function ProjectCarousel({
 
             <div
                 className="relative overflow-hidden rounded"
-                style={{ width: size, height: size }}
+                style={{ height: height, width: width }}
             >
                 {show && (
                     <img
