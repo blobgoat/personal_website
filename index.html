@@ -6,6 +6,16 @@
   <link rel="icon" type="image/svg+xml" href="/assets/react.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jacob Seaman</title>
+  <script>
+    (function () {
+      const l = window.location;
+      if (l.search[1] === 'p') {
+        const p = new URLSearchParams(l.search).get('p').replace(/~and~/g, '&');
+        window.history.replaceState(null, null, '/' + p + (new URLSearchParams(l.search).get('q') ? '?' + new URLSearchParams(l.search).get('q').replace(/~and~/g, '&') : '') + l.hash);
+      }
+    })();
+  </script>
+
 </head>
 
 <body>
