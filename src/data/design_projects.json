@@ -7,19 +7,29 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "I designed a campus commuting app that helps students build lasting connections by matching them with others walking similar routes between classes."
+                    "value": "I designed a campus commuting app that helps students build lasting connections by matching them with others walking similar routes between classes. Based on user interviews, the design emphasizes consistent engagement outside the classroom as the best way to develop rapport. By encouraging recurring meetups during commutes, the app makes it easy to meet people who also want to expand their social circles. To add a playful and personal touch, the app features a customizable sticker board: users earn stickers, display them as conversation starters, and exchange them after meetups—emulating the way laptop stickers carry stories and memories in real life, but in a digital form."
+                },
+                {
+                    "type": "list",
+                    "style": "bullet",
+                    "items": [
+                        {
+                            "type": "text",
+                            "value": "**User-Centered Research:** Through interviews and surveys to identify user needs, avoiding pitfalls of standard social media apps."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**High-Fidelity Prototyping:** Create a Figma interactive prototype for user testing and feedback. Was able to receive speak out loud feedback from users."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Artistic Choices to Emphasize Playfulness of Stickers:** The app is black and white with stick figures, making the stickers, and hopefully the connections made through the app, more vibrant and meaningful."
+                        }
+                    ]
                 },
                 {
                     "type": "text",
-                    "value": "Based on user interviews, the design emphasizes consistent engagement outside the classroom as the best way to develop rapport."
-                },
-                {
-                    "type": "text",
-                    "value": "By encouraging recurring meetups during commutes, the app makes it easy to meet people who also want to expand their social circles."
-                },
-                {
-                    "type": "text",
-                    "value": "To add a playful and personal touch, the app features a customizable sticker board: users earn stickers, display them as conversation starters, and exchange them after meetups—emulating the way laptop stickers carry stories and memories in real life, but in a digital form."
+                    "value": "The project was developed using Figma, incorporating principles of user-centered design, high-fidelity prototyping, and usability testing. This was presented as a poster inside a workshop setting to peers and instructors, receiving positive feedback on its innovative approach to fostering social connections among students."
                 }
             ]
         },
@@ -51,11 +61,11 @@
         ],
         "affiliatedLinks": [
             {
-                "label": "Figma Design File",
+                "label": "Figma",
                 "link": "https://www.figma.com/design/7hBNtlpfVnh6ag00CT7nW6/FriendSHIP?t=bsr5nRy796u6ItUw-0"
             },
             {
-                "label": "Figma Prototype",
+                "label": "Prototype",
                 "link": "https://www.figma.com/proto/7hBNtlpfVnh6ag00CT7nW6/FriendSHIP?node-id=134-5148&t=2BfGlxyInd0pTyWT-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=134%3A5148"
             },
             {
@@ -78,11 +88,25 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "I designed a digital intake system for food banks to replace slow paper-based forms."
+                    "value": "Lynwood Food Bank does not have a digital intake processes. It currently opperates as a paper based system which volunteers have to input manually into their database. I have designed a high fidelity intake form waiting to be implement for Lynwood Food Bank making use of usability principles like Fitt's law and Gestalt principles. This process involved working with a client to better understand their needs, recieiving feedback, and iterating on the design."
                 },
                 {
-                    "type": "text",
-                    "value": "The prototype streamlines client onboarding, collects dietary and resource needs often missed in the manual process, and saves valuable volunteer time."
+                    "type": "list",
+                    "style": "bullet",
+                    "items": [
+                        {
+                            "type": "text",
+                            "value": "**Simple Intuitive Interface** fitting a phone screen allowing clients to easily scan a QR code and input their information while waiting in line."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Designed with Graphic Design and Typography in Mind**, helping it appear more trustworthy and professional to users."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Utilized Custom Figma Components:** my first project which made full use of all the tools Figma has to offer."
+                        }
+                    ]
                 },
                 {
                     "type": "text",
@@ -122,15 +146,15 @@
         ],
         "affiliatedLinks": [
             {
-                "label": "Figma Design File",
+                "label": "Figma",
                 "link": "https://www.figma.com/design/jfuS5N23KRAqB4R6KuR755/Foodbank-Intake-Form-UI?node-id=0-1&p=f&t=w8SPinTCuBFKST7O-0"
             },
             {
-                "label": "Figma Prototype",
+                "label": "Prototype",
                 "link": "https://www.figma.com/proto/jfuS5N23KRAqB4R6KuR755/Foodbank-Intake-Form-UI?node-id=2004-10883&t=w8SPinTCuBFKST7O-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2004%3A10883&show-proto-sidebar=1"
             },
             {
-                "label": "Affiliated Github",
+                "label": "GitHub",
                 "link": "https://github.com/JimmyALiu/FoodBankConnect"
             }
         ],

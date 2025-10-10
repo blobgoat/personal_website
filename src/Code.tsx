@@ -6,7 +6,7 @@ import { BottomProjectInfoCard, RegularInfoTitleCard, RegularProjectInfoCard, To
 
 export function Code() {
     return (
-        <><div className="text-center text-[50px] font-['BreeSerif'] font-semibold pt-10 pb-5">
+        <><div className="text-center text-[50px] font-['BreeSerif'] font-semibold pt-10 pb-5 leading-tight">
             Coding Projects!
         </div>
             <div className="w-full max-w-4xl mx-auto" >
@@ -39,6 +39,9 @@ function CodingProjectCard({ project }: { project: Project }) {
     return (
         <div className="center">
             <TopProjectInfoCard title={project.title} date={project.date} handleClick={() => (project)} children={undefined} />
+            <RegularInfoTitleCard title="Technologies:" handleClick={() => (project)} >
+                {project.technologies.join(", ")}
+            </RegularInfoTitleCard>
             <RegularProjectInfoCard handleClick={() => (project)} >
                 <div className="flex justify-center">
                     <ProjectCarousel images={project.images} />
@@ -46,9 +49,7 @@ function CodingProjectCard({ project }: { project: Project }) {
             </RegularProjectInfoCard>
             <RegularInfoTitleCard title="Description:" description={project.description as { type: "tailwind"; content: { type: "text"; value: string; }[]; }} handleClick={() => (project)} children={undefined} >
             </RegularInfoTitleCard>
-            <RegularInfoTitleCard title="Technologies:" handleClick={() => (project)} >
-                {project.technologies.join(", ")}
-            </RegularInfoTitleCard>
+
             <BottomProjectInfoCard links={project.affiliatedLinks} handleClick={() => (project)} children={undefined} />
             {/* need to add a gap between each project card */}
             <div className="h-4"></div>
