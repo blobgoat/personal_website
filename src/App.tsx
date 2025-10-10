@@ -30,6 +30,7 @@ function App() {
         break;
       default:
         setCurrentPage("Home");
+        navigate("/");
     }
   }, [location.pathname]);
 
