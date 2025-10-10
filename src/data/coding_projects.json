@@ -7,7 +7,7 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "UW Diary Cards is a digital tool that helps students easily complete their weekly diary cards. Students can fill out their skills practice, rate the effectiveness of each skill, add custom notes for the teacher, and once finished, quickly download their completed card for a Canvas submission."
+                    "value": "UW Diary Cards is a digital tool that helps students easily complete their weekly diary cards, a requirement in many UW EDUC courses. For their homework assignment, students fill out daily report cards allowing them to easily reflect on how effective a skill was, reinforcing their learning, and actively changing the habits of students. They can also add custom notes for the teacher if they have additional questions on course content. This software effectively replaces the traditional paper diary cards, which are often forgotten, lost, or guilitly filled out inconsistently."
                 },
                 {
                     "type": "list",
@@ -23,13 +23,13 @@
                         },
                         {
                             "type": "text",
-                            "value": "**One-click email sending** to share directly with faculty or supervisors."
+                            "value": "**One-click email sending** to either share directly with faculty, or send to themselves and download to submit onto Canvas."
                         }
                     ]
                 },
                 {
                     "type": "text",
-                    "value": "The app streamlines the entire process—making diary card tracking faster, easier, and more consistent."
+                    "value": "The app streamlines the entire process—making diary card tracking faster, easier, more accessible, and convenient. The app is designed to not replace the paper method, but output and follow the same format as traditional diary cards. It purely works as an alternative for students who prefer digital tools. The app is built using Flutter and Dart, ensuring cross-platform compatibility and a smooth user experience on both Android and iOS devices."
                 }
             ]
         },
@@ -57,7 +57,7 @@
                 "link": "https://drive.google.com/file/d/1lrlPM6VRLtzQPWI076QxzqKA6lIFUghM/view?usp=sharing"
             },
             {
-                "label": "Other Files and More",
+                "label": "More...",
                 "link": "https://drive.google.com/drive/folders/1reYZPK755FpvjFf7VMBlapfe-GclgUQB?usp=sharing"
             }
         ],
@@ -78,15 +78,29 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "This personal website is a showcase of my accomplishments, built with HTML and styled using Tailwind CSS for a clean, responsive design."
+                    "value": "This personal website is a showcase of my accomplishments, to be viewed by recruiters and peers. It integrates recent graphic design knowledge and experiments with a unique layout using buttons instead of a classic app bar. It is built with HTML and styled using Tailwind CSS for a clean, responsive design. Each project includes short, clear descriptions, and all content is managed through a structured JSON file."
+                },
+                {
+                    "type": "list",
+                    "style": "bullet",
+                    "items": [
+                        {
+                            "type": "text",
+                            "value": "**Dynamic web interface** for different screen sizes and devices. A website that looks good on mobile, tablet, and desktop."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Custom components**, originally designed in figma, it was then translated into code using Tailwind CSS for a unique and modern look."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Easy to maintain**, it uses a modular structure in the form of a JSON format to easily create new projects, and edit existing ones, without having to look at the source code."
+                        }
+                    ]
                 },
                 {
                     "type": "text",
-                    "value": "Each project includes short, clear descriptions, and all content is managed through a structured JSON file."
-                },
-                {
-                    "type": "text",
-                    "value": "I’ve also developed custom components to keep the site modular, efficient, and easy to expand."
+                    "value": "This website serves as a personal portfolio, highlighting my skills and projects in coding, design, and research. It is hosted on GitHub Pages for easy access and sharing."
                 }
             ]
         },
@@ -98,7 +112,7 @@
         ],
         "affiliatedLinks": [
             {
-                "label": "GitHub Repository",
+                "label": "GitHub",
                 "link": "https://github.com/username/personal_website"
             },
             {
@@ -111,6 +125,64 @@
             "Tailwind CSS",
             "TypeScript",
             "HTML"
+        ]
+    },
+    {
+        "date": "2025-06-15T00:00:00Z",
+        "title": "Predicting mRNA expression using histopathology images",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "Under mentorship from Dr. Yao, I developed a machine learning model to predict mRNA expression from lung cancer histopathology images. This project aimed to provide insights into the relationship between genetic expression and cancer morphology. Potentially inventing an alternative to knowledge graphs for researchers to identify novel pathways for cancer treatment using CNN. I approached this by taking an average of pixel values across several images to create a baseline image for each patient, then trained a neural network to map mRNA expression data to these images. For the mRNA data,I used thresholding to convert RNA expression into a binary format of underexpression and overexpression (data points above a z score of 0 was denoted with a 1, data points below this was denoted as 0). After training the model on the training set and validating it on a separate validation set, I evaluated its performance using area under the curve (AUC) metrics. And accuracy on the test set."
+                },
+                {
+                    "type": "list",
+                    "style": "bullet",
+                    "items": [
+                        {
+                            "type": "text",
+                            "value": "**Data pipelineing**: Pipelined data from multiple sources, including mRNA expression datasets and histopathology image repositories to get it in a readable format for a CNN."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Model Development**: Built and trained a neural network using TensorFlow to map mRNA data to corresponding histopathology images."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Evaluation**: Assessed model performance using metrics such as AUC and accuracy."
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "value": "The project demonstrated the potential of machine learning in biomedical research, coming back with unexpectedly high positives on a limited (180 patient) dataset. ORA12, a gene which has an association according to the Human Protein Atlas, but not fully understood in the context of lung cancer, had an AUC of 0.298 and an accuracy of 0.778. Much better results than anticipated, providing stronger evidence of ORA12's potential role as a biomarker. This suggests that my CNN model and methodology could aid basic research on cancer biomarkers."
+                }
+            ]
+        },
+        "images": [
+            {
+                "url": "assets/images/coding/CNN_predict_mRNA/top_10_genes.png",
+                "alt": "Training and validation loss graph over several epochs, some stopped early due to early stopping in place. Shows a decreasing trend in both training and validation loss."
+            },
+            {
+                "url": "assets/images/coding/CNN_predict_mRNA/top10genesTable.png",
+                "alt": "AUC results of the model, showing the top 10 genes with the highest AUC scores, along with their accuracy."
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "GitHub",
+                "link": "https://github.com/username/repo"
+            }
+        ],
+        "technologies": [
+            "Python",
+            "TensorFlow",
+            "Machine Learning",
+            "Data Analysis",
+            "Data Pipelineing"
         ]
     }
 ]

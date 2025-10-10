@@ -6,7 +6,7 @@ import { BottomProjectInfoCard, RegularInfoTitleCard, RegularProjectInfoCard, To
 
 export function Code() {
     return (
-        <><div className="text-center text-[50px] font-['BreeSerif'] font-semibold pt-10 pb-5">
+        <><div className="text-center text-[50px] font-['BreeSerif'] font-semibold pt-10 pb-5 leading-tight">
             Coding Projects!
         </div>
             <div className="w-full max-w-4xl mx-auto" >
@@ -39,6 +39,9 @@ function CodingProjectCard({ project }: { project: Project }) {
     return (
         <div className="center">
             <TopProjectInfoCard title={project.title} date={project.date} handleClick={() => (project)} children={undefined} />
+            <RegularInfoTitleCard title="Technologies:" handleClick={() => (project)} >
+                {project.technologies.join(", ")}
+            </RegularInfoTitleCard>
             <RegularProjectInfoCard handleClick={() => (project)} >
                 <div className="flex justify-center">
                     <ProjectCarousel images={project.images} />
@@ -46,9 +49,7 @@ function CodingProjectCard({ project }: { project: Project }) {
             </RegularProjectInfoCard>
             <RegularInfoTitleCard title="Description:" description={project.description as { type: "tailwind"; content: { type: "text"; value: string; }[]; }} handleClick={() => (project)} children={undefined} >
             </RegularInfoTitleCard>
-            <RegularInfoTitleCard title="Technologies:" handleClick={() => (project)} >
-                {project.technologies.join(", ")}
-            </RegularInfoTitleCard>
+
             <BottomProjectInfoCard links={project.affiliatedLinks} handleClick={() => (project)} children={undefined} />
             {/* need to add a gap between each project card */}
             <div className="h-4"></div>
@@ -61,10 +62,12 @@ type ImgItem = { url: string; alt: string };
 
 export default function ProjectCarousel({
     images,
-    size = 250, // px window size; set to 185 by default
+    height = 400, // px window size; set to 400 by default
+    width = "100%", // default width set to 100%
 }: {
     images: ImgItem[];
-    size?: number;
+    height?: number;
+    width?: string | number;
 }) {
     const [i, setI] = useState(0);
 
@@ -94,7 +97,7 @@ export default function ProjectCarousel({
             }}
             tabIndex={0}
             aria-label="Image carousel"
-            style={{ height: size }}
+            style={{ height: height, width: width }}
         >
             {total > 1 && (
                 <button
@@ -110,7 +113,7 @@ export default function ProjectCarousel({
 
             <div
                 className="relative overflow-hidden rounded"
-                style={{ width: size, height: size }}
+                style={{ height: height, width: width }}
             >
                 {show && (
                     <img
