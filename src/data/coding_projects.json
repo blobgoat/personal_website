@@ -129,7 +129,7 @@
     },
     {
         "date": "2025-06-15T00:00:00Z",
-        "title": "Predicting mRNA expression using histopathology images",
+        "title": "Predicting mRNA Expression Using Images",
         "description": {
             "type": "tailwind",
             "content": [
