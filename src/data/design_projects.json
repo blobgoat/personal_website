@@ -88,7 +88,7 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "Lynwood Food Bank does not have a digital intake processes. It currently opperates as a paper based system which volunteers have to input manually into their database. I have designed a high fidelity intake form waiting to be implement for Lynwood Food Bank making use of usability principles like Fitt's law and Gestalt principles. This process involved working with a client to better understand their needs, recieiving feedback, and iterating on the design."
+                    "value": "Lynwood Food Bank does not have a digital intake process. It currently operates as a paper-based system, which volunteers have to input manually into their database. I have designed a high-fidelity intake form waiting to be implemented for Lynwood Food Bank, making use of usability principles like Fitts' Law and Gestalt principles. This process involved working with a client to better understand their needs, receiving feedback, and iterating on the design."
                 },
                 {
                     "type": "list",
@@ -96,7 +96,7 @@
                     "items": [
                         {
                             "type": "text",
-                            "value": "**Simple Intuitive Interface** fitting a phone screen allowing clients to easily scan a QR code and input their information while waiting in line."
+                            "value": "**Simple Intuitive Interface** fitting a phone screen, allowing clients to easily scan a QR code and input their information while waiting in line."
                         },
                         {
                             "type": "text",

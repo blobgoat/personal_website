@@ -7,7 +7,7 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "UW Diary Cards is a digital tool that helps students easily complete their weekly diary cards, a requirement in many UW EDUC courses. For their homework assignment, students fill out daily report cards allowing them to easily reflect on how effective a skill was, reinforcing their learning, and actively changing the habits of students. They can also add custom notes for the teacher if they have additional questions on course content. This software effectively replaces the traditional paper diary cards, which are often forgotten, lost, or guilitly filled out inconsistently."
+                    "value": "UW Diary Cards is a digital tool that helps students easily complete their weekly diary cards, a requirement in many UW EDUC courses. For their homework assignment, students fill out daily report cards, allowing them to easily reflect on how effective a skill was, reinforcing their learning, and actively changing the habits of students. They can also add custom notes for the teacher if they have additional questions on course content. This software effectively replaces the traditional paper diary cards, which are often forgotten, lost, or guiltily filled out inconsistently."
                 },
                 {
                     "type": "list",
@@ -29,7 +29,7 @@
                 },
                 {
                     "type": "text",
-                    "value": "The app streamlines the entire process—making diary card tracking faster, easier, more accessible, and convenient. The app is designed to not replace the paper method, but output and follow the same format as traditional diary cards. It purely works as an alternative for students who prefer digital tools. The app is built using Flutter and Dart, ensuring cross-platform compatibility and a smooth user experience on both Android and iOS devices."
+                    "value": "The app streamlines the entire process—making diary card tracking faster, easier, more accessible, and convenient. The app is designed not to replace the paper method, but to output and follow the same format as traditional diary cards. It purely works as an alternative for students who prefer digital tools. The app is built using Flutter and Dart, ensuring cross-platform compatibility and a smooth user experience on both Android and iOS devices."
                 }
             ]
         },
@@ -94,7 +94,7 @@
                         },
                         {
                             "type": "text",
-                            "value": "**Easy to maintain**, it uses a modular structure in the form of a JSON format to easily create new projects, and edit existing ones, without having to look at the source code."
+                            "value": "**Easy to maintain**, it uses a modular structure in the form of a JSON format to easily create new projects and edit existing ones."
                         }
                     ]
                 },
@@ -113,11 +113,11 @@
         "affiliatedLinks": [
             {
                 "label": "GitHub",
-                "link": "https://github.com/username/personal_website"
+                "link": "https://github.com/blobgoat/personal_website"
             },
             {
                 "label": "Live Website",
-                "link": "https://username.github.io/personal_website/"
+                "link": "https://blobgoat.github.io/personal_website/"
             }
         ],
         "technologies": [
@@ -135,7 +135,7 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "Under mentorship from Dr. Yao, I developed a machine learning model to predict mRNA expression from lung cancer histopathology images. This project aimed to provide insights into the relationship between genetic expression and cancer morphology. Potentially inventing an alternative to knowledge graphs for researchers to identify novel pathways for cancer treatment using CNN. I approached this by taking an average of pixel values across several images to create a baseline image for each patient, then trained a neural network to map mRNA expression data to these images. For the mRNA data,I used thresholding to convert RNA expression into a binary format of underexpression and overexpression (data points above a z score of 0 was denoted with a 1, data points below this was denoted as 0). After training the model on the training set and validating it on a separate validation set, I evaluated its performance using area under the curve (AUC) metrics. And accuracy on the test set."
+                    "value": "Under mentorship from Dr. Yao, I developed a machine learning model to predict mRNA expression from lung cancer histopathology images. This project aimed to provide insights into the relationship between genetic expression and cancer morphology. Potentially inventing an alternative to knowledge graphs for researchers to identify novel pathways for cancer treatment using CNN. I approached this by taking an average of pixel values across several images to create a baseline image for each patient, then trained a neural network to map mRNA expression data to these images. For the mRNA data, I used thresholding to convert RNA expression into a binary format of underexpression and overexpression (data points above a z score of 0 were denoted with a 1, data points below this were denoted as 0). After training the model on the training set and validating it on a separate validation set, I evaluated its performance using the area under the curve (AUC) metric. And accuracy on the test set."
                 },
                 {
                     "type": "list",
@@ -143,7 +143,7 @@
                     "items": [
                         {
                             "type": "text",
-                            "value": "**Data pipelineing**: Pipelined data from multiple sources, including mRNA expression datasets and histopathology image repositories to get it in a readable format for a CNN."
+                            "value": "**Data pipeline**: Pipelined data from multiple sources, including mRNA expression datasets and histopathology image repositories to get it in a readable format for a CNN."
                         },
                         {
                             "type": "text",
@@ -157,7 +157,7 @@
                 },
                 {
                     "type": "text",
-                    "value": "The project demonstrated the potential of machine learning in biomedical research, coming back with unexpectedly high positives on a limited (180 patient) dataset. ORA12, a gene which has an association according to the Human Protein Atlas, but not fully understood in the context of lung cancer, had an AUC of 0.298 and an accuracy of 0.778. Much better results than anticipated, providing stronger evidence of ORA12's potential role as a biomarker. This suggests that my CNN model and methodology could aid basic research on cancer biomarkers."
+                    "value": "The project demonstrated the potential of machine learning in biomedical research, coming back with unexpectedly high positives on a limited (180 patient) dataset. ORA12, a gene which has an association according to the Human Protein Atlas, but is not fully understood in the context of lung cancer, had an AUC of 0.298 and an accuracy of 0.778. Much better results than anticipated, providing stronger evidence of ORA12's potential role as a biomarker. This suggests that my CNN model and methodology could aid basic research on cancer biomarkers."
                 }
             ]
         },

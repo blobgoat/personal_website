@@ -7,7 +7,7 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "While affiliated to Shoreline Community College, I participated in the Honor's Research Program, which involved a year-long research project culminating in a presentation at the UW Undergraduate Research Symposium and thesis. My project focused on the sociological forces and fears surrounding Large Language Models (LLMs) and artificial intelligence. I explored how historical context, media representation, and philosophical arguments contribute to public perception and technophobia regarding AI. By splitting up our fear into irrational and rational forces, I attempt to ask or better the understand the question of whether our fears of AI are justified, or if the fearmongering is just history repeating itself once again."
+                    "value": "While affiliated with Shoreline Community College, I participated in the Honors Research Program, which involved a year-long research project culminating in a presentation at the UW Undergraduate Research Symposium and a thesis. My project focused on the sociological forces and fears surrounding Large Language Models (LLMs) and artificial intelligence. I explored how historical context, media representation, and philosophical arguments contribute to public perception and technophobia regarding AI. By splitting up our fear into irrational and rational forces, I attempt to ask, or better the understand the question of whether our fears of AI are justified, or if the fearmongering is just history repeating itself once again."
                 },
                 {
                     "type": "list",
@@ -15,21 +15,21 @@
                     "items": [
                         {
                             "type": "text",
-                            "value": "**Conducted an Extensive Literature Review** summarizing interesting thoughts and opinions from various lenses such as psychology, philosophy and sociology."
+                            "value": "**Conducted an Extensive Literature Review** summarizing interesting thoughts and opinions from various lenses such as psychology, philosophy, and sociology."
                         },
                         {
                             "type": "text",
-                            "value": "**Interpreted and Analyzed History** drawing similarities from similar historical events like the invention of electricity."
+                            "value": "**Interpreted and Analyzed History**, drawing similarities from similar historical events like the invention of electricity."
                         },
                         {
                             "type": "text",
-                            "value": "**Wrote and Presented Highly Technical Materials** to several research symposiums. Including a 20 minute presentation and a 10 page thesis."
+                            "value": "**Wrote and Presented Highly Technical Materials** to several research symposiums. Including a 10-minute presentation and a 10-page thesis."
                         }
                     ]
                 },
                 {
                     "type": "text",
-                    "value": "I sought publication after graduation, but was unsuccessful due to the absence of experimentation and empirical evidence. However, now that I am a graduate in computer science I now have the technical ability to experiment and am able to conduct some of the experiments I was thinking about several years ago. I am planning to revisit my thesis and expand upon it in the future in my free time."
+                    "value": "I sought publication after graduation, but was unsuccessful due to the absence of experimentation and empirical evidence. However, now that I am a graduate in computer science, I have the technical ability to experiment and can conduct some of the experiments I was thinking about several years ago. I am planning to revisit my thesis and expand upon it in the future in my free time."
                 }
             ]
         },
@@ -58,7 +58,7 @@
             },
             {
                 "label": "Slide Deck",
-                "link": "https://username.github.io/uw_diary_cards/"
+                "link": "https://docs.google.com/presentation/d/17id1NHf0QeRHikbVdhQqiP4ixkdLiV2B/"
             },
             {
                 "label": "Zotero",
@@ -85,7 +85,7 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "While affiliated to SEAL lab, I led an effort on gamification of undergraduate research. I utilized the sociopsychological paradigm with a focus on the environment and its impact on personality and motivation. I explore the gamer motivation model by quantic foundry, the Big Five personality test, and the gamer agency model from game theory to better understand how different aspects of someone's psychology can impact their performance in a gamified environment. I redesigned surveys and interview questions to better fit the sociopsychological paradigm, wrote grant proposals to fund the project, collected data, and collaborated with a team to analyze and present findings."
+                    "value": "While affiliated with the SEAL lab, I led an effort on the gamification of undergraduate research. I utilized the sociopsychological paradigm with a focus on the environment and its impact on personality and motivation. I explore the gamer motivation model by Quantic Foundry, the Big Five personality test, and the gamer agency model from game theory to better understand how different aspects of someone's psychology can impact their performance in a gamified environment. I redesigned surveys and interview questions to better fit the sociopsychological paradigm, wrote grant proposals to fund the project, collected data, and collaborated with a team to analyze and present findings."
                 },
                 {
                     "type": "list",
@@ -93,11 +93,11 @@
                     "items": [
                         {
                             "type": "text",
-                            "value": "**Conducted User Research** finding substantial insights into user needs and behaviors."
+                            "value": "**Conducted User Research**, finding substantial insights into user needs and behaviors."
                         },
                         {
                             "type": "text",
-                            "value": "**Conducted a Literature Review** directing my team to unexplored terriotory in academic gamification research."
+                            "value": "**Conducted a Literature Review**, directing my team to unexplored territory in academic gamification research."
                         },
                         {
                             "type": "text",
