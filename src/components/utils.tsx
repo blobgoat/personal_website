@@ -1,6 +1,6 @@
 
 //globally relevant variables
-export const labels: string[] = ["Code", "Research", "Design", "Hobbies &\n More!"];
+export const labels: string[] = ["Code", "Research", "Design", "Game Design!"];
 
 
 //home

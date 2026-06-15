@@ -8,7 +8,7 @@ interface HomeProps {
   setPageToCoding: (setCurrentPage: (page: string) => void) => void;
   setPageToResearch: (setCurrentPage: (page: string) => void) => void;
   setPageToDesign: (setCurrentPage: (page: string) => void) => void;
-  setPageToHobbies: (setCurrentPage: (page: string) => void) => void;
+  setPageToGameDesign: (setCurrentPage: (page: string) => void) => void;
   setPageToHome: (setCurrentPage: (page: string) => void) => void;
 }
 
@@ -17,7 +17,7 @@ function Home({
   setPageToCoding,
   setPageToResearch,
   setPageToDesign,
-  setPageToHobbies,
+  setPageToGameDesign,
   setPageToHome,
 }: HomeProps) {
   return (
@@ -26,7 +26,7 @@ function Home({
       setPageToCoding={setPageToCoding}
       setPageToResearch={setPageToResearch}
       setPageToDesign={setPageToDesign}
-      setPageToHobbies={setPageToHobbies}
+      setPageToGameDesign={setPageToGameDesign}
       setPageToHome={setPageToHome}
     />
   );
@@ -43,7 +43,7 @@ function Home({
 
 const leadingValue: string = "leading-8"; // Define leading as a variable for easy editing
 // Main container that groups all the big grey cards together
-const MainPanel = ({ setCurrentPage, setPageToCoding, setPageToResearch, setPageToDesign, setPageToHobbies }: { setCurrentPage: (page: string) => void, setPageToCoding: (setCurrentPage: (page: string) => void) => void, setPageToResearch: (setCurrentPage: (page: string) => void) => void, setPageToDesign: (setCurrentPage: (page: string) => void) => void, setPageToHobbies: (setCurrentPage: (page: string) => void) => void, setPageToHome: (setCurrentPage: (page: string) => void) => void }) => (
+const MainPanel = ({ setCurrentPage, setPageToCoding, setPageToResearch, setPageToDesign, setPageToGameDesign }: { setCurrentPage: (page: string) => void, setPageToCoding: (setCurrentPage: (page: string) => void) => void, setPageToResearch: (setCurrentPage: (page: string) => void) => void, setPageToDesign: (setCurrentPage: (page: string) => void) => void, setPageToGameDesign: (setCurrentPage: (page: string) => void) => void, setPageToHome: (setCurrentPage: (page: string) => void) => void }) => (
 
 
   <div className="flex flex-col bg-[#D9D9D9] rounded-2xl text-[20px] leading-[100%]">
@@ -92,18 +92,17 @@ const MainPanel = ({ setCurrentPage, setPageToCoding, setPageToResearch, setPage
       </ul>
     </RegularInfoCard>
 
-    <BottomInfoCard title="Hobbies & More:" handleClick={() => setPageToHobbies(setCurrentPage)}>
+    <BottomInfoCard title="Game Design:" handleClick={() => setPageToGameDesign(setCurrentPage)}>
       <ul className={`list-disc pl-6 ${leadingValue}`}>
-        <li>Backpacking</li>
-        <li>Cooking</li>
-        <li>Art</li>
-        <li>Volunteering</li>
+        <li>Unyeilding Flapjack</li>
+        <li>UX design</li>
+        <li>VR Game Development</li>
       </ul>
     </BottomInfoCard>
   </div>
 );
 
-function PortfolioMock({ setCurrentPage, setPageToCoding, setPageToResearch, setPageToDesign, setPageToHobbies, setPageToHome }: { setCurrentPage: (page: string) => void, setPageToCoding: (setCurrentPage: (page: string) => void) => void, setPageToResearch: (setCurrentPage: (page: string) => void) => void, setPageToDesign: (setCurrentPage: (page: string) => void) => void, setPageToHobbies: (setCurrentPage: (page: string) => void) => void, setPageToHome: (setCurrentPage: (page: string) => void) => void }) {
+function PortfolioMock({ setCurrentPage, setPageToCoding, setPageToResearch, setPageToDesign, setPageToGameDesign, setPageToHome }: { setCurrentPage: (page: string) => void, setPageToCoding: (setCurrentPage: (page: string) => void) => void, setPageToResearch: (setCurrentPage: (page: string) => void) => void, setPageToDesign: (setCurrentPage: (page: string) => void) => void, setPageToGameDesign: (setCurrentPage: (page: string) => void) => void, setPageToHome: (setCurrentPage: (page: string) => void) => void }) {
   return (
     <div className="text-gray-900">
 
@@ -115,7 +114,7 @@ function PortfolioMock({ setCurrentPage, setPageToCoding, setPageToResearch, set
 
         {/* Big grey box container (separate component) */}
         <div>
-          <MainPanel setCurrentPage={setCurrentPage} setPageToCoding={setPageToCoding} setPageToResearch={setPageToResearch} setPageToDesign={setPageToDesign} setPageToHobbies={setPageToHobbies} setPageToHome={setPageToHome} />
+          <MainPanel setCurrentPage={setCurrentPage} setPageToCoding={setPageToCoding} setPageToResearch={setPageToResearch} setPageToDesign={setPageToDesign} setPageToGameDesign={setPageToGameDesign} setPageToHome={setPageToHome} />
         </div>
       </main>
     </div>

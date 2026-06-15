@@ -20,7 +20,7 @@ type TabProps = {
     setPageToCoding: (setCurrentPage: (page: string) => void) => void;
     setPageToDesign: (setCurrentPage: (page: string) => void) => void;
     setPageToHome: (setCurrentPage: (page: string) => void) => void;
-    setPageToHobbies: (setCurrentPage: (page: string) => void) => void;
+    setPageToGameDesign: (setCurrentPage: (page: string) => void) => void;
 
     // Colors: are static gloabls
 
@@ -43,7 +43,7 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
         setPageToCoding,
         setPageToDesign,
         setPageToHome,
-        setPageToHobbies,
+        setPageToGameDesign,
         ...rest
     },
     ref
@@ -79,8 +79,8 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
                 case "Design":
                     setPageToDesign!((page) => setCurrentPage!(page));
                     break;
-                case "Hobbies & More!":
-                    setPageToHobbies!((page) => setCurrentPage!(page));
+                case "Game Design":
+                    setPageToGameDesign!((page) => setCurrentPage!(page));
                     break;
                 default:
                     setPageToHome!((page) => setCurrentPage!(page));
@@ -103,8 +103,8 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
                 disabled={disabled}
                 onClick={handleClick}
                 style={{
-                    ["--tab-bg" as any]: isActive ? tabColorPressed : tabColorActive,
-                    ["--tab-hover" as any]: isActive ? tabColorPressedHover : tabColorActiveHover,
+                    ["--tab-bg"]: isActive ? tabColorPressed : tabColorActive,
+                    ["--tab-hover"]: isActive ? tabColorPressedHover : tabColorActiveHover,
                     minWidth: tabminWidth,
                     minHeight: tabminHeight,
                     padding: `${tabminPaddingY} ${tabminPaddingX}`,
@@ -130,7 +130,7 @@ const Tab = React.forwardRef<HTMLButtonElement, TabProps>(function Tab(
     );
 });
 
-export function TabList({ currentPage, onSelect, setPageToResearch, setPageToCoding, setPageToDesign, setPageToHome, setPageToHobbies }: { currentPage: string; onSelect: (label: string) => void; setPageToResearch: (setCurrentPage: (page: string) => void) => void; setPageToCoding: (setCurrentPage: (page: string) => void) => void; setPageToDesign: (setCurrentPage: (page: string) => void) => void; setPageToHome: (setCurrentPage: (page: string) => void) => void; setPageToHobbies: (setCurrentPage: (page: string) => void) => void; }) {
+export function TabList({ currentPage, onSelect, setPageToResearch, setPageToCoding, setPageToDesign, setPageToHome, setPageToGameDesign }: { currentPage: string; onSelect: (label: string) => void; setPageToResearch: (setCurrentPage: (page: string) => void) => void; setPageToCoding: (setCurrentPage: (page: string) => void) => void; setPageToDesign: (setCurrentPage: (page: string) => void) => void; setPageToHome: (setCurrentPage: (page: string) => void) => void; setPageToGameDesign: (setCurrentPage: (page: string) => void) => void; }) {
     return (
         <div role="tablist" aria-label="Example" className="flex w-full h-full gap-2 md:gap-10 flex-nowrap justify-center">
             {labels.map((label) => (
@@ -143,7 +143,7 @@ export function TabList({ currentPage, onSelect, setPageToResearch, setPageToCod
                         setPageToCoding={setPageToCoding}
                         setPageToDesign={setPageToDesign}
                         setPageToHome={setPageToHome}
-                        setPageToHobbies={setPageToHobbies}
+                        setPageToGameDesign={setPageToGameDesign}
                     >
                         {label}
                     </Tab>
@@ -153,9 +153,9 @@ export function TabList({ currentPage, onSelect, setPageToResearch, setPageToCod
     );
 }
 
-export function TabListWrapper({ currentPage, onSelect, setPageToResearch, setPageToCoding, setPageToDesign, setPageToHome, setPageToHobbies }: { currentPage: string; onSelect: (label: string) => void; setPageToResearch: (setCurrentPage: (page: string) => void) => void; setPageToCoding: (setCurrentPage: (page: string) => void) => void; setPageToDesign: (setCurrentPage: (page: string) => void) => void; setPageToHome: (setCurrentPage: (page: string) => void) => void; setPageToHobbies: (setCurrentPage: (page: string) => void) => void; }) {
+export function TabListWrapper({ currentPage, onSelect, setPageToResearch, setPageToCoding, setPageToDesign, setPageToHome, setPageToGameDesign }: { currentPage: string; onSelect: (label: string) => void; setPageToResearch: (setCurrentPage: (page: string) => void) => void; setPageToCoding: (setCurrentPage: (page: string) => void) => void; setPageToDesign: (setCurrentPage: (page: string) => void) => void; setPageToHome: (setCurrentPage: (page: string) => void) => void; setPageToGameDesign: (setCurrentPage: (page: string) => void) => void; }) {
     return (
-        <TabList currentPage={currentPage} onSelect={onSelect} setPageToResearch={setPageToResearch} setPageToCoding={setPageToCoding} setPageToDesign={setPageToDesign} setPageToHome={setPageToHome} setPageToHobbies={setPageToHobbies} />
+        <TabList currentPage={currentPage} onSelect={onSelect} setPageToResearch={setPageToResearch} setPageToCoding={setPageToCoding} setPageToDesign={setPageToDesign} setPageToHome={setPageToHome} setPageToGameDesign={setPageToGameDesign} />
 
     );
 }
