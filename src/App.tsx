@@ -22,8 +22,8 @@ function App() {
       case "/design":
         setCurrentPage("Design");
         break;
-      case "/hobbies":
-        setCurrentPage("Hobbies &\n More!");
+      case "/game_design":
+        setCurrentPage("Game Design");
         break;
       case "/":
         setCurrentPage("Home");
@@ -32,7 +32,7 @@ function App() {
         setCurrentPage("Home");
         navigate("/");
     }
-  }, [location.pathname]);
+  }, [location.pathname, navigate]);
 
   // Page setters
   const setPageToCoding = () => {
@@ -53,9 +53,9 @@ function App() {
     window.scrollTo(0, 0);
   };
 
-  const setPageToHobbies = () => {
-    setCurrentPage("Hobbies & More!");
-    navigate("/hobbies");
+  const setPageToGameDesign = () => {
+    setCurrentPage("Game Design");
+    navigate("/game_design");
     window.scrollTo(0, 0);
   };
 
@@ -154,7 +154,7 @@ function App() {
             setPageToCoding={setPageToCoding}
             setPageToDesign={setPageToDesign}
             setPageToHome={setPageToHome}
-            setPageToHobbies={setPageToHobbies}
+            setPageToGameDesign={setPageToGameDesign}
           />
         </div>
         <div className="h-2" />
@@ -173,7 +173,7 @@ function App() {
                   setPageToCoding={setPageToCoding}
                   setPageToDesign={setPageToDesign}
                   setPageToHome={setPageToHome}
-                  setPageToHobbies={setPageToHobbies}
+                  setPageToGameDesign={setPageToGameDesign}
                 />
               }
             />
@@ -196,10 +196,10 @@ function App() {
               }
             />
             <Route
-              path="/hobbies"
+              path="/game_design"
               element={
                 <div className="text-center text-2xl">
-                  Hobbies & More! Page (Coming Soon!)
+                  Game Design Page (Coming Soon!)
                 </div>
               }
             />
