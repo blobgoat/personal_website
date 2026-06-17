@@ -7,7 +7,7 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "As part of the 2026 Virtual Dreams cohort hosted by SIM, I developed a VR game called Unyielding Flapjack. The game is a comedic pancake-flipping experience where players mix ingredients, cook pancakes, and serve customer orders in an interactive fantasy kitchen. It was built in Unity with C# and designed for Meta Quest 2 and Meta Quest 3."
+                    "value": "As part of the 2026 Virtual Dreams cohort hosted by SIM, I developed the VR game Unyielding Flapjack! The game is a comedic pancake-flipping experience where players mix ingredients, cook pancakes, and serve customer orders in an interactive fantasy kitchen. It was built in Unity with C# and designed for Meta Quest 2 and Meta Quest 3."
                 },
                 {
                     "type": "list",
@@ -15,7 +15,7 @@
                     "items": [
                         {
                             "type": "text",
-                            "value": "**Designed and developed core VR gameplay systems** using Unity and C#, including ingredient mixing, pancake pouring, flipping mechanics, order delivery, and interactive kitchen objects."
+                            "value": "**Designed and developed core VR gameplay systems** using Unity and C#, including ingredient mixing, pancake pouring, flipping mechanics, order delivery, gamemanagement, and interactive kitchen objects."
                         },
                         {
                             "type": "text",
@@ -29,7 +29,7 @@
                 },
                 {
                     "type": "text",
-                    "value": "The game was showcased at the Seattle XR Conference 2026, where it received positive feedback for its creative concept, humorous premise, and engaging VR interactions. Based on that reception, I am currently exploring opportunities to further develop and potentially publish the game on VR platforms. The prototype is available on Itch.io and SideQuest."
+                    "value": "The game was showcased at the Seattle XR Conference 2026, where it received positive feedback for its creative concept and engaging VR interactions. I am currently exploring opportunities to further develop my game. The prototype is available on Itch.io and SideQuest."
                 }
             ]
         },
