@@ -8,7 +8,7 @@ import { typecheckProjects, type Project } from "./components/utils";
 export function GameDevelopment() {
     return (
         <><div className="text-center text-[50px] font-['BreeSerif'] font-semibold pt-10 pb-5 leading-tight">
-            Game Development
+            Game Development!
         </div>
             <div className="w-full max-w-4xl mx-auto" >
                 <GameDevelopmentList />
