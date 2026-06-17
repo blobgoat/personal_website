@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Code } from "./Code";
 import { Research } from "./Research";
 import { Design } from "./Design";
+import { GameDevelopment } from "./GameDevelopment";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -198,9 +199,8 @@ function App() {
             <Route
               path="/game_design"
               element={
-                <div className="text-center text-2xl">
-                  Game Design Page (Coming Soon!)
-                </div>
+                <GameDevelopment />
+
               }
             />
           </Routes>

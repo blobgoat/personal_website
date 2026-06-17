@@ -6,7 +6,7 @@ import React from "react";
  * @returns JSX.Element
  */
 export const TopProjectInfoCard: React.FC<{ date: string; title: string; children: React.ReactNode; handleClick?: () => void }> = ({ date, title, children, handleClick = () => { } }) => (
-    <div className=" border border-black border-[1px] p-2 md:p-1 shadow-sm bg-[#D9D9D9] w-full" onClick={handleClick}>
+    <div className=" border border-black border-[1px] p-4 md:p-6 shadow-sm bg-[#D9D9D9] w-full" onClick={handleClick}>
         <div className="flex justify-between items-center mb-1">
             <h4 className="text-[30px] font-bold text-gray-900 flex flex-wrap items-center">
                 {title}
@@ -27,7 +27,7 @@ export const TopProjectInfoCard: React.FC<{ date: string; title: string; childre
  * @returns JSX.Element
  */
 export const BottomProjectInfoCard: React.FC<{ links: { label: string; link: string }[]; children: React.ReactNode; handleClick?: () => void }> = ({ links, children, handleClick = () => { } }) => (
-    <div className=" border border-black bg-[#D9D9D9] border-[1px] p-2 md:p-1 shadow-sm w-full" onClick={handleClick}>
+    <div className=" border border-black bg-[#D9D9D9] border-[1px] p-4 md:p-6 shadow-sm w-full" onClick={handleClick}>
         <div className="flex flex-wrap justify-start items-center space-x-2">
             {links.map((link, index) => (
                 <React.Fragment key={link.label}>
@@ -49,7 +49,7 @@ export const BottomProjectInfoCard: React.FC<{ links: { label: string; link: str
  * @returns JSX.Element
  */
 export const RegularProjectInfoCard: React.FC<{ children: React.ReactNode, handleClick?: () => void }> = ({ children, handleClick = () => { } }) => (
-    <div className="border border-black border-[1px] p-1 md:p-2 shadow-sm bg-[#D9D9D9] w-full" onClick={handleClick}>
+    <div className="border border-black border-[1px] p-4 md:p-6 shadow-sm bg-[#D9D9D9] w-full" onClick={handleClick}>
         <h4 className="text-[24px] font-semibold text-gray-900 mb-1">{ }</h4>
         <div className="text-[20px] text-gray-800 leading-5 space-y-1">
             {children}
@@ -81,7 +81,7 @@ export const RegularInfoTitleCard: React.FC<{
     handleClick: () => void;
     children: React.ReactNode;
 }> = ({ title, description, handleClick, children }) => (
-    <div className="border border-black border-[1px] p-1 md:p-2 shadow-sm bg-[#D9D9D9] w-full" onClick={handleClick}>
+    <div className="border border-black border-[1px] p-4 md:p-6 shadow-sm bg-[#D9D9D9] w-full" onClick={handleClick}>
         <h4 className="text-[24px] font-semibold text-gray-900 mb-1">{title}</h4>
         {description
             ? description.content.map((item, index) => {
