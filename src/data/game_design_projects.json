@@ -1,1 +1,94 @@
-{}
+[
+    {
+        "date": "2026-06-06T00:00:00Z",
+        "title": "Unyielding Flapjack",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "As part of the 2026 Virtual Dreams cohort hosted by SIM, I developed a VR game called Unyielding Flapjack. The game is a comedic pancake-flipping experience where players mix ingredients, cook pancakes, and serve customer orders in an interactive fantasy kitchen. It was built in Unity with C# and designed for Meta Quest 2 and Meta Quest 3."
+                },
+                {
+                    "type": "list",
+                    "style": "bullet",
+                    "items": [
+                        {
+                            "type": "text",
+                            "value": "**Designed and developed core VR gameplay systems** using Unity and C#, including ingredient mixing, pancake pouring, flipping mechanics, order delivery, and interactive kitchen objects."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Applied user-centered design principles** by conducting playtesting sessions, gathering feedback, and iterating on game mechanics, controls, comfort, and overall player experience."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Collaborated with a Team of Designers and Developers**, this program required me to lead the creative direction and take primary responsibility for game design and development tasks while directing a small team of mentors and experts."
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "value": "The game was showcased at the Seattle XR Conference 2026, where it received positive feedback for its creative concept, humorous premise, and engaging VR interactions. Based on that reception, I am currently exploring opportunities to further develop and potentially publish the game on VR platforms. The prototype is available on Itch.io and SideQuest."
+                }
+            ]
+        },
+        "skills": [
+            "Unity",
+            "C#",
+            "VR Game Design",
+            "User-Centered Design",
+            "Playtesting and Iteration",
+            "Team Collaboration",
+            "Blender (for 3D modeling)"
+        ],
+        "images": [
+            {
+                "url": "assets/images/unyieldingFlapjack/Logo_cropped.png",
+                "alt": "Title screen for “Unyielding Flapjack,” showing a fantasy kitchen scene with a large plush chef character, a frying pan, ingredients, an open recipe book, and a banner displaying the game title in red text."
+            },
+            {
+                "url": "assets/images/unyieldingFlapjack/orderRecieved.gif",
+                "alt": "A GIF showing a giant bolder thrown from a hot airballoon hitting the table with an order ticket pinned onto it."
+            },
+            {
+                "url": "assets/images/unyieldingFlapjack/mixing.gif",
+                "alt": "A GIF showing a player mixing ingredients inside the game"
+            },
+            {
+                "url": "assets/images/unyieldingFlapjack/SuccessfulFlip.gif",
+                "alt": "A GIF showing a successful pancake flip in the game"
+            },
+            {
+                "url": "assets/images/unyieldingFlapjack/failurewaffle.gif",
+                "alt": "A GIF showing a player attempting to flip a pancake but it falls out of the pan hitting the table, turning into a waffle."
+            },
+            {
+                "url": "assets/images/unyieldingFlapjack/ThrowingPancake.gif",
+                "alt": "A GIF showing a player successfully hurling a pancake order to a hot air balloon with customers in it."
+            },
+            {
+                "url": "assets/images/unyieldingFlapjack/milknbutter.png",
+                "alt": "A screenshot showing the milk and butter ingredients in the game"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "link": "https://blobgoat.itch.io/unyielding-flapjack",
+                "label": "Itch.io"
+            },
+            {
+                "link": "https://sidequestvr.com/app/60727/unyielding-flapjack-demo",
+                "label": "SideQuest"
+            },
+            {
+                "link": "https://www.youtube.com/watch?v=24kcKevYSxU",
+                "label": "Youtube Play Through"
+            },
+            {
+                "link": "https://luma.com/n8vhi1ue",
+                "label": "Seattle XR Invite"
+            }
+        ]
+    }
+]
