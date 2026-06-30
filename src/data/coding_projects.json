@@ -135,7 +135,7 @@
             "content": [
                 {
                     "type": "text",
-                    "value": "Under mentorship from Dr. Yao, I developed a machine learning model to predict mRNA expression from lung cancer histopathology images. This project aimed to provide insights into the relationship between genetic expression and cancer morphology. Potentially inventing an alternative to knowledge graphs for researchers to identify novel pathways for cancer treatment using CNN. I approached this by taking an average of pixel values across several images to create a baseline image for each patient, then trained a neural network to map mRNA expression data to these images. For the mRNA data, I used thresholding to convert RNA expression into a binary format of underexpression and overexpression (data points above a z score of 0 were denoted with a 1, data points below this were denoted as 0). After training the model on the training set and validating it on a separate validation set, I evaluated its performance using the area under the curve (AUC) metric. And accuracy on the test set."
+                    "value": "I developed Collect Twirling Bits, a reusable TypeScript npm package that lets websites add interactive, collectible star bits to the page with minimal setup. The package exposes a simple createStarBits API that handles spawning, animation, collection, persistent scoring, and cleanup. I designed it so it could be installed into any frontend project as a lightweight visual interaction layer, while still allowing developers to customize spawn rate, maximum objects on screen, star size, animation speed, storage key, and whether star bits are allowed to appear over images."
                 },
                 {
                     "type": "list",
@@ -183,6 +183,84 @@
             "Machine Learning",
             "Data Analysis",
             "Data Pipelineing"
+        ]
+    },
+    {
+        "date": "2026-06-30T00:00:00Z",
+        "title": "Collect Twirling Bits",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "This is a reusable TypeScript npm package that lets websites add interactive, collectible star bits to the page with minimal setup."
+                },
+                {
+                    "type": "list",
+                    "style": "bullet",
+                    "items": [
+                        {
+                            "type": "text",
+                            "value": "**Reusable npm package**: Published as collect-twirling-bits, users can install and run on any frontend project."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Configurable API**: Designed options for spawn rate, maximum bits on screen, star size, spin speed, storage key, and image-overlap behavior."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Interactive DOM behavior**: Built collectible star bits that spawn on the page, animate continuously, update a persistent counter, and clean up safely."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Collision-aware placement**: Added logic to avoid spawning over text, images, existing star bits, and screen edges."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Publishing workflow**: Configured build output, package exports, type declarations, local tarball testing, and npm publishing setup."
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "value": "This project demonstrates my ability to create packages and design modular projects that can fit together into larger applications. It also shows my understanding of DOM manipulation, animation, and user interaction in web development."
+                }
+            ]
+        },
+        "images": [
+            {
+                "url": "assets/images/twirlingbits/WindowFullOfBits.gif",
+                "alt": "A window full of twirling star bits"
+            },
+            {
+                "url": "assets/images/twirlingbits/CollectingBits.gif",
+                "alt": "A window showing star bits being collected, with a counter at the top right increasing as the bits are collected"
+            },
+            {
+                "url": "assets/images/twirlingbits/PhoneScreen.gif",
+                "alt": "A phone screen showing star bits being collected, with a counter at the top right increasing as the bits are collected"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "GitHub",
+                "link": "https://github.com/blobgoat/CollectTwirlingBits"
+            },
+            {
+                "label": "NPM",
+                "link": "https://www.npmjs.com/package/collect-twirling-bits"
+            },
+            {
+                "label": "Demo",
+                "link": "https://blobgoat.github.io/CollectTwirlingBits/"
+            }
+        ],
+        "technologies": [
+            "TypeScript",
+            "NPM",
+            "DOM Manipulation",
+            "Animation",
+            "Web Development"
         ]
     }
 ]
