@@ -257,7 +257,7 @@
         ],
         "technologies": [
             "TypeScript",
-            "NPM",
+            "npm",
             "DOM Manipulation",
             "Animation",
             "Web Development"
