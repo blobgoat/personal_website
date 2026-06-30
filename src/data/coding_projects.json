@@ -229,12 +229,12 @@
         },
         "images": [
             {
-                "url": "assets/images/twirlingbits/WindowFullOfBits.gif",
-                "alt": "A window full of twirling star bits"
-            },
-            {
                 "url": "assets/images/twirlingbits/CollectingBits.gif",
                 "alt": "A window showing star bits being collected, with a counter at the top right increasing as the bits are collected"
+            },
+            {
+                "url": "assets/images/twirlingbits/WindowFullOfBits.gif",
+                "alt": "A window full of twirling star bits"
             },
             {
                 "url": "assets/images/twirlingbits/PhoneScreen.gif",
