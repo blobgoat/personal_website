@@ -6,6 +6,22 @@ import { Code } from "./Code";
 import { Research } from "./Research";
 import { Design } from "./Design";
 import { GameDevelopment } from "./GameDevelopment";
+import { createStarBits, type StarBitsApi, type StarBitsOptions } from "collect-twirling-bits"
+
+const starBitsConfig: StarBitsOptions = {
+  spawnEveryMs: 5000, // Spawn a new star every 5 seconds
+  maxOnScreen: 10, // Maximum of 10 stars on screen at once
+  starSize: 28, // Size of each star in pixels
+  storageKey: "twirling-bits-total", // Key for localStorage to track total stars
+  speedOfSpin: 5000, // Speed of spin in milliseconds
+  spawnOverImages: false,
+};
+
+// Initializes the twirling bits with the specified configuration
+const twirlingBits: StarBitsApi = createStarBits(starBitsConfig);
+
+//this will start twirling bits animation, it should run concurrently
+twirlingBits.start();
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
