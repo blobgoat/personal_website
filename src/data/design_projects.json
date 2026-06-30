@@ -166,5 +166,76 @@
             "Accessibility Design",
             "Working with Clients"
         ]
+    },
+    {
+        "date": "2026-06-30T00:00:00Z",
+        "title": "Collect Twirling Bits Interaction Design",
+        "description": {
+            "type": "tailwind",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "Collect Twirling Bits is an interactive web design feature that adds collectible, animated star bits to a page. The design focuses on making a website feel more playful and responsive without interfering with readability or normal page interaction."
+                },
+                {
+                    "type": "list",
+                    "style": "bullet",
+                    "items": [
+                        {
+                            "type": "text",
+                            "value": "**Playful interaction design**: Designed collectible star bits that encourage users to explore and interact with the page in a lightweight, game-like way."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Motion and feedback**: Created continuous twirling animations, collection movement, and counter updates to give users immediate visual feedback."
+                        },
+                        {
+                            "type": "text",
+                            "value": "**Non-intrusive layout**: Designed collision-aware placement so star bits avoid text, images, existing bits, and screen edges."
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "value": "This project demonstrates my ability to design interactive web experiences that balance playfulness with usability. It shows my understanding of animation, responsive design, visual feedback, and how small interface details can make a website feel more engaging."
+                }
+            ]
+        },
+        "images": [
+            {
+                "url": "assets/images/twirlingbits/CollectingBits.gif",
+                "alt": "A window showing star bits being collected, with a counter at the top right increasing as the bits are collected"
+            },
+            {
+                "url": "assets/images/twirlingbits/WindowFullOfBits.gif",
+                "alt": "A window full of twirling star bits"
+            },
+            {
+                "url": "assets/images/twirlingbits/PhoneScreen.gif",
+                "alt": "A phone screen showing star bits being collected, with a counter at the top right increasing as the bits are collected"
+            }
+        ],
+        "affiliatedLinks": [
+            {
+                "label": "GitHub",
+                "link": "https://github.com/blobgoat/CollectTwirlingBits"
+            },
+            {
+                "label": "NPM",
+                "link": "https://www.npmjs.com/package/collect-twirling-bits"
+            },
+            {
+                "label": "Demo",
+                "link": "https://blobgoat.github.io/CollectTwirlingBits/"
+            }
+        ],
+        "skills": [
+            "Interactive Design",
+            "Motion Design",
+            "Responsive Design",
+            "DOM Interaction",
+            "Web Animation",
+            "TypeScript"
+        ]
     }
 ]
